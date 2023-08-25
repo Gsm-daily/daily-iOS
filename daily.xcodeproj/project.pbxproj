@@ -37,7 +37,7 @@
 		6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3491208521B3E8169C06E05 /* DailyTextField.swift */; };
 		7451C0F96296471111388C84 /* DailyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92D733B6F0C19ADB5719DD /* DailyButton.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
-		7FA3E8AB16BE9308CC1EB09C /* ThemeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B551081EC04E8E7550A20B /* ThemeViewModel.swift */; };
+		7FA3E8AB16BE9308CC1EB09C /* ThemeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B551081EC04E8E7550A20B /* ThemeReactor.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */; };
@@ -144,7 +144,7 @@
 		CE620C8C0181E2A767746393 /* AuthKeyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyReactor.swift; sourceTree = "<group>"; };
 		D14AA882651C9DC5E022246A /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		D23B51E639CC25049DDD8D2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		D4B551081EC04E8E7550A20B /* ThemeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewModel.swift; sourceTree = "<group>"; };
+		D4B551081EC04E8E7550A20B /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		D6C84EB7ED670B27E5CFFA42 /* DailyCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalender.swift; sourceTree = "<group>"; };
 		DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlow.swift; sourceTree = "<group>"; };
 		EB518431739AEC9970A41ED5 /* CheckEmailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailReactor.swift; sourceTree = "<group>"; };
@@ -304,7 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				77F15DFB7FE9349DDAF877C3 /* VC */,
-				62E2035326ED0DFD7187A4E7 /* VM */,
+				62E2035326ED0DFD7187A4E7 /* Reactor */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -434,12 +434,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		62E2035326ED0DFD7187A4E7 /* VM */ = {
+		62E2035326ED0DFD7187A4E7 /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				D4B551081EC04E8E7550A20B /* ThemeViewModel.swift */,
+				D4B551081EC04E8E7550A20B /* ThemeReactor.swift */,
 			);
-			path = VM;
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		6808937197FDD8C730D008DF /* VC */ = {
@@ -980,7 +980,7 @@
 				E6CD2EC29EEF9D12528BB29B /* ProfileViewController.swift in Sources */,
 				5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */,
 				293B6D49E612FBF54B2307E2 /* ThemeViewController.swift in Sources */,
-				7FA3E8AB16BE9308CC1EB09C /* ThemeViewModel.swift in Sources */,
+				7FA3E8AB16BE9308CC1EB09C /* ThemeReactor.swift in Sources */,
 				F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */,
 				B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */,
 			);

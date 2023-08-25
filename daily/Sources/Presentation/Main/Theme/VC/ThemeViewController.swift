@@ -14,11 +14,15 @@ import RxSwift
 class ThemeViewController: BaseViewController<ThemeReactor> {
 
     override func viewDidLoad() {
-        self.tabBarController?.tabBar.isHidden = true
+        self.navigationItem.addLeftBarButtonItem()
         super.viewDidLoad()
     }
     
-    override func viewWillDisappear(_ animated: Bool) {
+    override func viewWillAppear(_ animated: Bool) {
+        self.tabBarController?.tabBar.isHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
         self.tabBarController?.tabBar.isHidden = false
     }
 
@@ -39,5 +43,12 @@ class ThemeViewController: BaseViewController<ThemeReactor> {
             $0.leading.trailing.equalToSuperview()
             $0.top.bottom.equalToSuperview()
         }
+    }
+    
+    override func bindView(reactor: ThemeReactor) {
+        navigationItem.leftBarButtonItem?.rx.tap
+            .map { ThemeReactor.Action.backButtonDidTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 }

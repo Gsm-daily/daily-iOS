@@ -1,10 +1,3 @@
-//
-//  CertificationNumberViewController.swift
-//  daily
-//
-//  Created by 선민재 on 2023/03/06.
-//
-
 import UIKit
 import SnapKit
 import Then

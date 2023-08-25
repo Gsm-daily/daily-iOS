@@ -35,6 +35,9 @@ final class TabBarFlow: Flow {
         switch step {
         case .tabBarIsRequired:
             return coordinateToMainTabbar()
+        case .homeIsRequired:
+            rootVC.selectedIndex = 0
+            return .none
         default:
             return .none
         }
