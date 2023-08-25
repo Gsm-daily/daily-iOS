@@ -14,13 +14,16 @@ import DPOTPView
 
 class CertificationNumberViewController: BaseViewController<CertificationNumberReactor>{
     
+    private var timerLeft: Int = 300
+    
     override func viewDidLoad(){
         super.viewDidLoad()
+        startTimer()
         self.navigationItem.backButton(title: "")
     }
     
     private var timerLabel = UILabel().then {
-        $0.text = "4 : 59"
+        $0.text = "5 : 00"
         $0.font = UIFont.systemFont(
             ofSize: 40,
             weight: .bold
@@ -76,6 +79,21 @@ class CertificationNumberViewController: BaseViewController<CertificationNumberR
             blue: 1,
             alpha: 0
         )
+    }
+    
+    private func startTimer() {
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true, block: { (t) in
+            self.timerLeft -= 1
+            let minutes = self.timerLeft / 60
+            let seconds = self.timerLeft % 60
+            if self.timerLeft > 0 {
+                self.timerLabel.text = String(format: "%d : %02d", minutes, seconds)
+            }
+            else {
+                self.timerLabel.text = "0 : 00"
+                self.timerLeft = 300
+            }
+        })
     }
     
     override func addView() {
