@@ -37,6 +37,8 @@ class ThemeFlow: Flow {
         switch step {
         case .themeIsRequired:
             return coordinateToTheme()
+        case .homeIsRequired:
+            return .one(flowContributor: .forwardToParentFlow(withStep: DailyStep.homeIsRequired))
         default:
             return .none
         }

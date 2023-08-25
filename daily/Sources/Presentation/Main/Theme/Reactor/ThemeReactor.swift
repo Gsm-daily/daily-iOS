@@ -13,7 +13,7 @@ final class ThemeReactor: Reactor, Stepper {
     // MARK: - Reactor
     
     enum Action {
-        
+        case backButtonDidTap
     }
     
     enum Mutation {
@@ -34,11 +34,16 @@ final class ThemeReactor: Reactor, Stepper {
 extension ThemeReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-            
+        case .backButtonDidTap:
+            return backButtonDidTap()
         }
     }
 }
 
 // MARK: - Method
 private extension ThemeReactor {
+    private func backButtonDidTap() -> Observable<Mutation> {
+        self.steps.accept(DailyStep.homeIsRequired)
+        return .empty()
+    }
 }
