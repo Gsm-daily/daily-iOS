@@ -11,7 +11,7 @@ import SnapKit
 import RxCocoa
 import ViewAnimator
 
-class IntroViewController: BaseViewController<IntroReactor>{
+class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -169,13 +169,13 @@ class IntroViewController: BaseViewController<IntroReactor>{
         }
     }
     
-    override func bindView(reactor: IntroReactor) {
+    override func bindView(reactor: OnBoardingReactor) {
         signInButton.rx.tap
-            .map { IntroReactor.Action.signInButtonTap }
+            .map { OnBoardingReactor.Action.signInButtonTap }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
         signUpButton.rx.tap
-            .map { IntroReactor.Action.signUpButtonTap }
+            .map { OnBoardingReactor.Action.signUpButtonTap }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
     }

@@ -12,7 +12,7 @@ enum DailyStep: Step {
     case splashIsRequired
     
     // MARK: Login
-    case loginIsRequired
+    case onBoardingIsRequired
     
     // MARK: SignUp
     case createPwIsRequired

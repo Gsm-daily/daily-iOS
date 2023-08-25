@@ -38,8 +38,8 @@ class HomeFlow: Flow {
         case .mainTabBarIsRequired:
             return .end(forwardToParentFlowWithStep: DailyStep.mainTabBarIsRequired)
             
-        case .loginIsRequired:
-            return .end(forwardToParentFlowWithStep: DailyStep.loginIsRequired)
+        case .onBoardingIsRequired:
+            return .end(forwardToParentFlowWithStep: DailyStep.onBoardingIsRequired)
             
         case .dailyIsRequired:
             return coordinateToDaily()
