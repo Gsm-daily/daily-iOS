@@ -43,7 +43,7 @@ final class AppFlow: Flow {
         switch step {
         case .splashIsRequired:
             return coordinateToSplash()
-        case .mainTabBarIsRequired:
+        case .tabBarIsRequired:
             return coordinateToHome()
         default:
             return .none
@@ -74,7 +74,7 @@ final class AppFlow: Flow {
             flowContributor: .contribute(
                 withNextPresentable: flow,
                 withNextStepper: OneStepper(
-                    withSingleStep: DailyStep.mainTabBarIsRequired
+                    withSingleStep: DailyStep.tabBarIsRequired
                 )
         ))
     }

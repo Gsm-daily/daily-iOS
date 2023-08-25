@@ -30,8 +30,8 @@ class LoginFlow: Flow {
             return navigateToOnBoarding()
         case .signInIsRequired:
             return navigateToSignIn()
-        case .mainTabBarIsRequired:
-            return .end(forwardToParentFlowWithStep: DailyStep.mainTabBarIsRequired)
+        case .tabBarIsRequired:
+            return .end(forwardToParentFlowWithStep: DailyStep.tabBarIsRequired)
         case .createPwIsRequired:
             return navigateToCreatePw()
         case .createEmailIsRequired:

@@ -13,7 +13,7 @@ struct MainStepper: Stepper{
     var steps = PublishRelay<Step>()
 
     var initialStep: Step{
-        return DailyStep.mainIsRequired
+        return DailyStep.homeIsRequired
     }
 }
 
@@ -35,8 +35,8 @@ class HomeFlow: Flow {
     func navigate(to step: Step) -> FlowContributors {
         guard let step = step as? DailyStep else { return .none }
         switch step {
-        case .mainTabBarIsRequired:
-            return .end(forwardToParentFlowWithStep: DailyStep.mainTabBarIsRequired)
+        case .tabBarIsRequired:
+            return .end(forwardToParentFlowWithStep: DailyStep.tabBarIsRequired)
             
         case .onBoardingIsRequired:
             return .end(forwardToParentFlowWithStep: DailyStep.onBoardingIsRequired)
@@ -44,7 +44,7 @@ class HomeFlow: Flow {
         case .dailyIsRequired:
             return coordinateToDaily()
             
-        case .mainIsRequired:
+        case .homeIsRequired:
             return coordinateToHome()
             
         default:
