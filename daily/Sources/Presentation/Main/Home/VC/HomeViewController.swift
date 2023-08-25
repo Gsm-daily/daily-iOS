@@ -39,7 +39,7 @@ class HomeViewController: BaseViewController<HomeViewModel>{
     }
     
     private let springBackground = UIImageView().then{
-        $0.image = UIImage(named: "Spring.svg")
+        $0.image = UIImage(named: "Summer.svg")
     }
     
     private let underView = UIView().then {
