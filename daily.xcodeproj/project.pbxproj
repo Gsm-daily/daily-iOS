@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -30,7 +30,6 @@
 		5A896939B42541F731A4E59A /* DailyCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C84EB7ED670B27E5CFFA42 /* DailyCalender.swift */; };
 		5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EC2A7997365D527651AD00 /* DailyTabBar.swift */; };
 		62C1971703D6233991204E44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3517475D7D5BAE4F93FEF /* HomeViewController.swift */; };
-		68DD02B4A444E1316C1EEDDD /* TabBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DDD12FF8DF75310C2C881A8 /* TabBarViewModel.swift */; };
 		6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3491208521B3E8169C06E05 /* DailyTextField.swift */; };
 		728532BDF8A8D12D4B4E8389 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 417AE802DB61A7EE73A3B057 /* HomeViewModel.swift */; };
 		7451C0F96296471111388C84 /* DailyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92D733B6F0C19ADB5719DD /* DailyButton.swift */; };
@@ -104,7 +103,6 @@
 		1416D7B22303CA23261A0AB3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		174D86E5992588AD132CBFE2 /* AuthKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyViewController.swift; sourceTree = "<group>"; };
 		17703AA3CF47C986EA66566A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		1DDD12FF8DF75310C2C881A8 /* TabBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarViewModel.swift; sourceTree = "<group>"; };
 		1E76FD8DD04734C02C638CBC /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
 		1FBA1ABED08AF315EBF6171B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		200F75688B95613F7DADEFB4 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
@@ -284,14 +282,6 @@
 				8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */,
 			);
 			path = Flows;
-			sourceTree = "<group>";
-		};
-		3140D43310385BE881ABF978 /* VM */ = {
-			isa = PBXGroup;
-			children = (
-				1DDD12FF8DF75310C2C881A8 /* TabBarViewModel.swift */,
-			);
-			path = VM;
 			sourceTree = "<group>";
 		};
 		319FF4A7D8C67B954FE98125 /* VM */ = {
@@ -714,7 +704,6 @@
 		D8F435D3B3336A0879D7C4FE /* TabBar */ = {
 			isa = PBXGroup;
 			children = (
-				3140D43310385BE881ABF978 /* VM */,
 				01EC2A7997365D527651AD00 /* DailyTabBar.swift */,
 			);
 			path = TabBar;
@@ -881,8 +870,6 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = Daily;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = A44BFB2ED6C04BB88C116CC5 /* Build configuration list for PBXProject "Daily" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -984,7 +971,6 @@
 				E6CD2EC29EEF9D12528BB29B /* ProfileViewController.swift in Sources */,
 				C2133D5D1C175AB1B20E30F2 /* ProfileViewModel.swift in Sources */,
 				5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */,
-				68DD02B4A444E1316C1EEDDD /* TabBarViewModel.swift in Sources */,
 				293B6D49E612FBF54B2307E2 /* ThemeViewController.swift in Sources */,
 				7FA3E8AB16BE9308CC1EB09C /* ThemeViewModel.swift in Sources */,
 				F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */,
