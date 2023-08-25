@@ -110,6 +110,15 @@ class CreateNicknameViewController: BaseViewController<CreateNicknameReactor>{
             $0.height.equalTo(14)
         }
     }
-    
+    override func bindView(reactor: CreateNicknameReactor) {
+        backSignInButton.rx.tap
+            .map { CreateNicknameReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        checkButton.rx.tap
+            .map { CreateNicknameReactor.Action.checkButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 }
 

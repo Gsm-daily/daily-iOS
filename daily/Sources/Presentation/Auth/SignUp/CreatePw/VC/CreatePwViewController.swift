@@ -131,4 +131,14 @@ class CreatePwViewController: BaseViewController<CreatePwReactor>{
         }
     }
     
+    override func bindView(reactor: CreatePwReactor) {
+        backSignInButton.rx.tap
+            .map { CreatePwReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        nextButton.rx.tap
+            .map { CreatePwReactor.Action.nextButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 }

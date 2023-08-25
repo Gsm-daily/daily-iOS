@@ -116,4 +116,15 @@ class CreateEmailViewController: BaseViewController<CreateEmailReactor>{
         }
     }
     
+    override func bindView(reactor: CreateEmailReactor) {
+        backSignInButton.rx.tap
+            .map { CreateEmailReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        getNumButton.rx.tap
+            .map { CreateEmailReactor.Action.getNumButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+    
 }

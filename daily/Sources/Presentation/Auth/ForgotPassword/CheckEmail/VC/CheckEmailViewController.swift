@@ -120,4 +120,15 @@ class CheckEmailViewController: BaseViewController<CheckEmailReactor>{
         }
     }
     
+    override func bindView(reactor: CheckEmailReactor) {
+        getNumButton.rx.tap
+            .map { CheckEmailReactor.Action.getNumButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        backSignInButton.rx.tap
+            .map { CheckEmailReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+    
 }

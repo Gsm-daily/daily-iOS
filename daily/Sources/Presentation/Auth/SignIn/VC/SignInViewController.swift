@@ -167,5 +167,20 @@ class SignInViewController: BaseViewController<SignInReactor>{
             $0.height.equalTo(14)
         }
     }
+    
+    override func bindView(reactor: SignInReactor) {
+        backSignUpButton.rx.tap
+            .map { SignInReactor.Action.backSignUpButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        signInButton.rx.tap
+            .map { SignInReactor.Action.signInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        forgotPwButton.rx.tap
+            .map { SignInReactor.Action.forgotPwButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 
 }

@@ -10,7 +10,7 @@
 		02B7F823D1215A368C23E33B /* CreatePwViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67A0B8B1234048F443AE7B99 /* CreatePwViewController.swift */; };
 		0340C91C2259FB5C2DC28209 /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 9AE731B5115163D71F930804 /* RxFlow */; };
 		04DE32C746A197AEB7877C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8324D0DB7103DB159732C0D7 /* LaunchScreen.storyboard */; };
-		059946D0F8754701C2533370 /* CheckEmailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F68E23AD4CA29717B96B6E /* CheckEmailViewModel.swift */; };
+		059946D0F8754701C2533370 /* CheckEmailReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 13F68E23AD4CA29717B96B6E /* CheckEmailReactor.swift */; };
 		0C9BF42F57A3EE38E51F1DDD /* ProfileCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 200F75688B95613F7DADEFB4 /* ProfileCollectionCell.swift */; };
 		0DD3ED676F1E577282D6025C /* SelectThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = AE936B3692DEFC9879F6AF4E /* SelectThemeCell.swift */; };
 		12D12D45A29ACEC07E085197 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDE16182F588DC05C7FCBB /* MainFlow.swift */; };
@@ -57,7 +57,7 @@
 		B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */; };
 		B2476D54C52109FB2C92EE74 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A50F16344FF02C73181D40 /* CertificationNumberViewController.swift */; };
 		B7C61BB5F8A714D3ACB8753A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBA1ABED08AF315EBF6171B /* Assets.xcassets */; };
-		B910D6CDF0C9781958A4C07C /* ForgotPasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F82B70FF68E63299111B80 /* ForgotPasswordViewModel.swift */; };
+		B910D6CDF0C9781958A4C07C /* ForgotPasswordReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1F82B70FF68E63299111B80 /* ForgotPasswordReactor.swift */; };
 		BEF44969312CDD811F3AAE8F /* DailyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A6E7D517BB97D5372BFDC /* DailyLabel.swift */; };
 		C2133D5D1C175AB1B20E30F2 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1416D7B22303CA23261A0AB3 /* ProfileViewModel.swift */; };
 		C66CE945EC3B50BFE5B3241A /* AuthKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D86E5992588AD132CBFE2 /* AuthKeyViewController.swift */; };
@@ -65,14 +65,14 @@
 		C9B81DB2365837538F44D14A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 51B01435703480FC39DE3E9C /* FSCalendar */; };
 		CBD97864F9BC7917CEF3279C /* DailyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041E3DD10BB174D0AC839FA5 /* DailyColor.swift */; };
 		D67BA2949D2268FC846C569F /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5389540FBBBFFCE313651B /* ChangePasswordViewController.swift */; };
-		DB7EEF4B1746EB9E0011D640 /* AuthKeyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E2BCD0386F80BA7162B8A /* AuthKeyViewModel.swift */; };
+		DB7EEF4B1746EB9E0011D640 /* AuthKeyReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F6E2BCD0386F80BA7162B8A /* AuthKeyReactor.swift */; };
 		DF4C49B3503340514400D72E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27437CE8A61C216F99AFE630 /* SignInViewController.swift */; };
 		E579EE831A3B930382FCEE8A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D11761700097E8119C86D39D /* RxCocoa */; };
 		E6CD2EC29EEF9D12528BB29B /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17703AA3CF47C986EA66566A /* ProfileViewController.swift */; };
 		E9ABD483E93DF1BE080114D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 100E0E2FD6BCA0172A174941 /* Kingfisher */; };
 		EF72EA2C18C17F5663D8FB0F /* CertificationNumberReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 364F5C691F3D01D6F0F13C2A /* CertificationNumberReactor.swift */; };
 		F2353E92853E03E0EFA03E29 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D08F3741D6118D193CE504 /* SnapKit */; };
-		F2A27B00C056401D5955E716 /* ChangePasswordViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76FD8DD04734C02C638CBC /* ChangePasswordViewModel.swift */; };
+		F2A27B00C056401D5955E716 /* ChangePasswordReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76FD8DD04734C02C638CBC /* ChangePasswordReactor.swift */; };
 		F64DEA2F5E24FA1225BE4661 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D79435020602010C42CBEB /* DailyViewController.swift */; };
 		F6FB9D75B7EEEA01B6E8BAB1 /* ForgotPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54E49C3CD4391BB860EFBC23 /* ForgotPasswordViewController.swift */; };
 		F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6655222829756C4F93636 /* SplashViewController.swift */; };
@@ -98,12 +98,12 @@
 		08545AD2F29EFA16514FE963 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		11D79435020602010C42CBEB /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
 		122042BA9EDD289E4F009C7B /* CreatePwReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePwReactor.swift; sourceTree = "<group>"; };
-		13F68E23AD4CA29717B96B6E /* CheckEmailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewModel.swift; sourceTree = "<group>"; };
+		13F68E23AD4CA29717B96B6E /* CheckEmailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailReactor.swift; sourceTree = "<group>"; };
 		1403CF8BA97065FFAEB71CAF /* ProfileFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlow.swift; sourceTree = "<group>"; };
 		1416D7B22303CA23261A0AB3 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		174D86E5992588AD132CBFE2 /* AuthKeyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyViewController.swift; sourceTree = "<group>"; };
 		17703AA3CF47C986EA66566A /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
-		1E76FD8DD04734C02C638CBC /* ChangePasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewModel.swift; sourceTree = "<group>"; };
+		1E76FD8DD04734C02C638CBC /* ChangePasswordReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordReactor.swift; sourceTree = "<group>"; };
 		1FBA1ABED08AF315EBF6171B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		200F75688B95613F7DADEFB4 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
 		27437CE8A61C216F99AFE630 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
@@ -132,7 +132,7 @@
 		8BE91FA13FF4F0615B858F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
 		93ABA02284EDBF20957D6EA9 /* DailyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNavigation.swift; sourceTree = "<group>"; };
-		9F6E2BCD0386F80BA7162B8A /* AuthKeyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyViewModel.swift; sourceTree = "<group>"; };
+		9F6E2BCD0386F80BA7162B8A /* AuthKeyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyReactor.swift; sourceTree = "<group>"; };
 		A28BC2712AF06495FE52A16B /* CreateNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNicknameViewController.swift; sourceTree = "<group>"; };
 		A4A50F16344FF02C73181D40 /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
 		AAA6655222829756C4F93636 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -148,7 +148,7 @@
 		D6C84EB7ED670B27E5CFFA42 /* DailyCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalender.swift; sourceTree = "<group>"; };
 		DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlow.swift; sourceTree = "<group>"; };
 		E6451F892365DC96F52BF68C /* CreateEmailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmailReactor.swift; sourceTree = "<group>"; };
-		F1F82B70FF68E63299111B80 /* ForgotPasswordViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewModel.swift; sourceTree = "<group>"; };
+		F1F82B70FF68E63299111B80 /* ForgotPasswordReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordReactor.swift; sourceTree = "<group>"; };
 		F3BE45DE2C956392C8B00A43 /* CheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewController.swift; sourceTree = "<group>"; };
 		FC057C128492F249CF21E001 /* DailyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStep.swift; sourceTree = "<group>"; };
 		FCB3F4DB7344B1CE0E088328 /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
@@ -208,7 +208,7 @@
 			isa = PBXGroup;
 			children = (
 				3C4423417F1F6129823253B4 /* VC */,
-				B8C86C1524214C495BEA2040 /* VM */,
+				B8C86C1524214C495BEA2040 /* Reactor */,
 			);
 			path = AuthKey;
 			sourceTree = "<group>";
@@ -234,11 +234,10 @@
 		18F9D4BD9AF3111628268DAA /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
+				77632C682A986DD1007BB3C0 /* ForgotPassword */,
 				13AFF987B76FA33E3DDAB511 /* AuthKey */,
 				195E1AA021515CF8344A855B /* ChangePassword */,
 				710DAE98D8E58D084843766D /* CheckEmail */,
-				6202300F6F8DF0F862F891D7 /* VC */,
-				A14432CAE92AF41D3DF274AB /* VM */,
 			);
 			path = ForgotPassword;
 			sourceTree = "<group>";
@@ -247,7 +246,7 @@
 			isa = PBXGroup;
 			children = (
 				79AC654500FDB7B7E66C9F82 /* VC */,
-				57C0773A92CC721495BB7472 /* VM */,
+				57C0773A92CC721495BB7472 /* Reactor */,
 			);
 			path = ChangePassword;
 			sourceTree = "<group>";
@@ -284,12 +283,12 @@
 			path = Flows;
 			sourceTree = "<group>";
 		};
-		319FF4A7D8C67B954FE98125 /* VM */ = {
+		319FF4A7D8C67B954FE98125 /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				13F68E23AD4CA29717B96B6E /* CheckEmailViewModel.swift */,
+				13F68E23AD4CA29717B96B6E /* CheckEmailReactor.swift */,
 			);
-			path = VM;
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		39AABBCCBEE99CB9A18CF96B /* Daily */ = {
@@ -393,12 +392,12 @@
 			path = Splash;
 			sourceTree = "<group>";
 		};
-		57C0773A92CC721495BB7472 /* VM */ = {
+		57C0773A92CC721495BB7472 /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				1E76FD8DD04734C02C638CBC /* ChangePasswordViewModel.swift */,
+				1E76FD8DD04734C02C638CBC /* ChangePasswordReactor.swift */,
 			);
-			path = VM;
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		5C73D80756FFCE6B2AC3B056 /* CreateNickname */ = {
@@ -471,9 +470,18 @@
 			isa = PBXGroup;
 			children = (
 				4CF6776A739C5F65AB1C100B /* VC */,
-				319FF4A7D8C67B954FE98125 /* VM */,
+				319FF4A7D8C67B954FE98125 /* Reactor */,
 			);
 			path = CheckEmail;
+			sourceTree = "<group>";
+		};
+		77632C682A986DD1007BB3C0 /* ForgotPassword */ = {
+			isa = PBXGroup;
+			children = (
+				6202300F6F8DF0F862F891D7 /* VC */,
+				A14432CAE92AF41D3DF274AB /* Reactor */,
+			);
+			path = ForgotPassword;
 			sourceTree = "<group>";
 		};
 		77F15DFB7FE9349DDAF877C3 /* VC */ = {
@@ -556,12 +564,12 @@
 			path = TextField;
 			sourceTree = "<group>";
 		};
-		A14432CAE92AF41D3DF274AB /* VM */ = {
+		A14432CAE92AF41D3DF274AB /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				F1F82B70FF68E63299111B80 /* ForgotPasswordViewModel.swift */,
+				F1F82B70FF68E63299111B80 /* ForgotPasswordReactor.swift */,
 			);
-			path = VM;
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		A19A527D5F04FB9E061CAD3A /* Reactor */ = {
@@ -606,12 +614,12 @@
 			path = Cell;
 			sourceTree = "<group>";
 		};
-		B8C86C1524214C495BEA2040 /* VM */ = {
+		B8C86C1524214C495BEA2040 /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				9F6E2BCD0386F80BA7162B8A /* AuthKeyViewModel.swift */,
+				9F6E2BCD0386F80BA7162B8A /* AuthKeyReactor.swift */,
 			);
-			path = VM;
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		B8D8BD65DFAEAB3D6BB6EDB4 /* Auth */ = {
@@ -938,13 +946,13 @@
 				880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */,
 				A3B731C69E708C663A022F31 /* TextField.swift in Sources */,
 				C66CE945EC3B50BFE5B3241A /* AuthKeyViewController.swift in Sources */,
-				DB7EEF4B1746EB9E0011D640 /* AuthKeyViewModel.swift in Sources */,
+				DB7EEF4B1746EB9E0011D640 /* AuthKeyReactor.swift in Sources */,
 				D67BA2949D2268FC846C569F /* ChangePasswordViewController.swift in Sources */,
-				F2A27B00C056401D5955E716 /* ChangePasswordViewModel.swift in Sources */,
+				F2A27B00C056401D5955E716 /* ChangePasswordReactor.swift in Sources */,
 				A237C7D722D7CC4A0F6A2280 /* CheckEmailViewController.swift in Sources */,
-				059946D0F8754701C2533370 /* CheckEmailViewModel.swift in Sources */,
+				059946D0F8754701C2533370 /* CheckEmailReactor.swift in Sources */,
 				F6FB9D75B7EEEA01B6E8BAB1 /* ForgotPasswordViewController.swift in Sources */,
-				B910D6CDF0C9781958A4C07C /* ForgotPasswordViewModel.swift in Sources */,
+				B910D6CDF0C9781958A4C07C /* ForgotPasswordReactor.swift in Sources */,
 				2F822FCEBFA07CEFE1A6257C /* IntroViewController.swift in Sources */,
 				7D7A31BA74B21A257DBA6BA9 /* IntroReactor.swift in Sources */,
 				DF4C49B3503340514400D72E /* SignInViewController.swift in Sources */,

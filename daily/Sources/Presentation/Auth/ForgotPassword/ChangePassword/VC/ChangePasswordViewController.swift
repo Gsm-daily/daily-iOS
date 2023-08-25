@@ -134,4 +134,15 @@ class ChangePasswordViewController: BaseViewController<ChangePasswordReactor>{
         }
     }
     
+    override func bindView(reactor: ChangePasswordReactor) {
+        finishButton.rx.tap
+            .map { ChangePasswordReactor.Action.finishButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        backSignInButton.rx.tap
+            .map { ChangePasswordReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+    
 }

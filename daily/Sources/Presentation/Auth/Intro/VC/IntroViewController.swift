@@ -168,5 +168,16 @@ class IntroViewController: BaseViewController<IntroReactor>{
             $0.trailing.equalTo(view.snp.trailing).inset((bounds.width) / 3.86)
         }
     }
+    
+    override func bindView(reactor: IntroReactor) {
+        signInButton.rx.tap
+            .map { IntroReactor.Action.signInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        signUpButton.rx.tap
+            .map { IntroReactor.Action.signUpButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 
 }
