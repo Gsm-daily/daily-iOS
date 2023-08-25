@@ -26,12 +26,12 @@ class LoginFlow: Flow {
         switch step {
         case .splashIsRequired:
             return coordinateToSplash()
-        case .loginIsRequired:
-            return navigateToLogin()
+        case .onBoardingIsRequired:
+            return navigateToOnBoarding()
         case .signInIsRequired:
             return navigateToSignIn()
-        case .mainTabBarIsRequired:
-            return .end(forwardToParentFlowWithStep: DailyStep.mainTabBarIsRequired)
+        case .tabBarIsRequired:
+            return .end(forwardToParentFlowWithStep: DailyStep.tabBarIsRequired)
         case .createPwIsRequired:
             return navigateToCreatePw()
         case .createEmailIsRequired:
@@ -57,9 +57,9 @@ class LoginFlow: Flow {
         return .one(flowContributor: .contribute(withNext: vc))
     }
     
-    private func navigateToLogin() -> FlowContributors {
-        let vm = IntroReactor()
-        let vc = IntroViewController(vm)
+    private func navigateToOnBoarding() -> FlowContributors {
+        let vm = OnBoardingReactor()
+        let vc = OnBoardingViewController(vm)
         self.rootViewController.setViewControllers([vc], animated: false)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }

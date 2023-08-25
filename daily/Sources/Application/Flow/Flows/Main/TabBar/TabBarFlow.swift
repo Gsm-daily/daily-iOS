@@ -33,7 +33,7 @@ final class TabBarFlow: Flow {
         guard let step = step as? DailyStep else {return .none}
         
         switch step {
-        case .mainTabBarIsRequired:
+        case .tabBarIsRequired:
             return coordinateToMainTabbar()
         default:
             return .none

@@ -55,7 +55,7 @@ private extension SignInReactor {
     }
     
     private func signInButtonTap() -> Observable<Mutation> {
-        self.steps.accept(DailyStep.mainTabBarIsRequired)
+        self.steps.accept(DailyStep.tabBarIsRequired)
         return .empty()
     }
     

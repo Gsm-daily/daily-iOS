@@ -4,7 +4,7 @@ import RxCocoa
 import RxSwift
 import ReactorKit
 
-class IntroReactor: Reactor, Stepper{
+class OnBoardingReactor: Reactor, Stepper{
     // MARK: - Properties
     
     var initialState: State
@@ -33,7 +33,7 @@ class IntroReactor: Reactor, Stepper{
 }
 
 // MARK: - Mutate
-extension IntroReactor {
+extension OnBoardingReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .signUpButtonTap:
@@ -45,7 +45,7 @@ extension IntroReactor {
 }
 
 // MARK: - Method
-private extension IntroReactor {
+private extension OnBoardingReactor {
     private func signUpButtonTap() -> Observable<Mutation> {
         self.steps.accept(DailyStep.createEmailIsRequired)
         return .empty()

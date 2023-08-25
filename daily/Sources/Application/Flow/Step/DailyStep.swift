@@ -12,7 +12,7 @@ enum DailyStep: Step {
     case splashIsRequired
     
     // MARK: Login
-    case loginIsRequired
+    case onBoardingIsRequired
     
     // MARK: SignUp
     case createPwIsRequired
@@ -26,7 +26,7 @@ enum DailyStep: Step {
     case changePasswordIsRequired
     
     // MARK: Main
-    case mainTabBarIsRequired
+    case tabBarIsRequired
     
     // MARK: Profile
     case profileIsRequired
@@ -41,5 +41,5 @@ enum DailyStep: Step {
     case dailyIsRequired
     
     // MARK: Main
-    case mainIsRequired
+    case homeIsRequired
 }

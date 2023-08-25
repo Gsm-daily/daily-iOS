@@ -47,7 +47,7 @@ extension CreateNicknameReactor {
 // MARK: - Method
 private extension CreateNicknameReactor {
     private func backSignInButtonTap() -> Observable<Mutation> {
-        self.steps.accept(DailyStep.mainTabBarIsRequired)
+        self.steps.accept(DailyStep.tabBarIsRequired)
         return .empty()
     }
     
