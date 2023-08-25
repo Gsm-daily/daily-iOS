@@ -4,8 +4,9 @@ import RxCocoa
 import RxFlow
 import ReactorKit
 
-final class CheckEmailReactor: Reactor, Stepper {
+class CreateEmailReactor: Reactor, Stepper{
     // MARK: - Properties
+    
     var initialState: State
     
     var steps: PublishRelay<Step> = .init()
@@ -32,7 +33,7 @@ final class CheckEmailReactor: Reactor, Stepper {
 }
 
 // MARK: - Mutate
-extension CheckEmailReactor {
+extension CreateEmailReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case .backSignInButtonTap:
@@ -44,14 +45,14 @@ extension CheckEmailReactor {
 }
 
 // MARK: - Method
-private extension CheckEmailReactor {
+private extension CreateEmailReactor {
     private func backSignInButtonTap() -> Observable<Mutation> {
         self.steps.accept(DailyStep.signInIsRequired)
         return .empty()
     }
     
     private func getNumButtonTap() -> Observable<Mutation> {
-        self.steps.accept(DailyStep.authKeyIsRequired)
+        self.steps.accept(DailyStep.certificationNumberIsRequired)
         return .empty()
     }
 }

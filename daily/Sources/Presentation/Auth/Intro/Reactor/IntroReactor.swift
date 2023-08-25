@@ -1,11 +1,12 @@
-import UIKit
-import RxSwift
-import RxCocoa
+import Foundation
 import RxFlow
+import RxCocoa
+import RxSwift
 import ReactorKit
 
-final class ChangePasswordReactor: Reactor, Stepper {
+class IntroReactor: Reactor, Stepper{
     // MARK: - Properties
+    
     var initialState: State
     
     var steps: PublishRelay<Step> = .init()
@@ -13,8 +14,8 @@ final class ChangePasswordReactor: Reactor, Stepper {
     // MARK: - Reactor
     
     enum Action {
-        case backSignInButtonTap
-        case finishButtonTap
+        case signUpButtonTap
+        case signInButtonTap
     }
     
     enum Mutation {
@@ -32,18 +33,25 @@ final class ChangePasswordReactor: Reactor, Stepper {
 }
 
 // MARK: - Mutate
-extension ChangePasswordReactor {
+extension IntroReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case .backSignInButtonTap, .finishButtonTap:
-            return coordinateToSignIn()
+        case .signUpButtonTap:
+            return signUpButtonTap()
+        case .signInButtonTap:
+            return signInButtonTap()
         }
     }
 }
 
 // MARK: - Method
-private extension ChangePasswordReactor {
-    private func coordinateToSignIn() -> Observable<Mutation> {
+private extension IntroReactor {
+    private func signUpButtonTap() -> Observable<Mutation> {
+        self.steps.accept(DailyStep.createEmailIsRequired)
+        return .empty()
+    }
+    
+    private func signInButtonTap() -> Observable<Mutation> {
         self.steps.accept(DailyStep.signInIsRequired)
         return .empty()
     }

@@ -9,7 +9,7 @@ import UIKit
 import Then
 import SnapKit
 
-class ProfileViewController: BaseViewController<ProfileViewModel> {
+class ProfileViewController: BaseViewController<ProfileReactor> {
 
     override func viewDidLoad() {
         super.viewDidLoad()

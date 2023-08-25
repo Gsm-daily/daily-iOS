@@ -1,22 +1,43 @@
-//
-//  AuthKeyViewModel.swift
-//  daily
-//
-//  Created by 선민재 on 2023/04/04.
-//
-
 import UIKit
 import RxSwift
 import RxCocoa
 import RxFlow
+import ReactorKit
 
-final class AuthKeyViewModel: BaseViewModel, Stepper {
+final class AuthKeyReactor: Reactor, Stepper {
+    // MARK: - Properties
+    var initialState: State
     
-    struct Input {
+    var steps: PublishRelay<Step> = .init()
+    
+    // MARK: - Reactor
+    
+    enum Action {
+    }
+    
+    enum Mutation {
         
     }
     
-    struct Output {
+    struct State {
         
     }
+    
+    // MARK: - Init
+    init() {
+        self.initialState = State()
+    }
+}
+
+// MARK: - Mutate
+extension AuthKeyReactor {
+    func mutate(action: Action) -> Observable<Mutation> {
+        switch action {
+        }
+    }
+}
+
+// MARK: - Method
+private extension AuthKeyReactor {
+
 }

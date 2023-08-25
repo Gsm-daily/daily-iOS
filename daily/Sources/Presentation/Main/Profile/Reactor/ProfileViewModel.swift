@@ -4,7 +4,7 @@ import RxCocoa
 import RxFlow
 import ReactorKit
 
-final class ThemeReactor: Reactor, Stepper {
+final class ProfileReactor: Reactor, Stepper {
     // MARK: - Properties
     var initialState: State
     
@@ -13,7 +13,6 @@ final class ThemeReactor: Reactor, Stepper {
     // MARK: - Reactor
     
     enum Action {
-        
     }
     
     enum Mutation {
@@ -31,14 +30,13 @@ final class ThemeReactor: Reactor, Stepper {
 }
 
 // MARK: - Mutate
-extension ThemeReactor {
+extension ProfileReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-            
         }
     }
 }
 
 // MARK: - Method
-private extension ThemeReactor {
+private extension ProfileReactor {
 }

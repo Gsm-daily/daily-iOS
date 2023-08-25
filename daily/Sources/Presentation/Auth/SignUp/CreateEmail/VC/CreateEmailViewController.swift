@@ -11,20 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class CreateEmailViewController: BaseViewController<CreateEmailViewModel>{
+class CreateEmailViewController: BaseViewController<CreateEmailReactor>{
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = CreateEmailViewModel.Input(
-            backSignInButtonTap: backSignInButton.rx.tap.asObservable(),
-            getNumButtonTap: getNumButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
     
     private let signUpText = UILabel().then {

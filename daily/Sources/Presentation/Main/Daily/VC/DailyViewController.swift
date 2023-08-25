@@ -11,7 +11,7 @@ import Then
 import RxCocoa
 import RxSwift
 
-class DailyViewController: BaseViewController<DailyViewModel>, UITextViewDelegate{
+class DailyViewController: BaseViewController<DailyReactor>, UITextViewDelegate{
 
     override func viewDidLoad() {
         self.tabBarController?.tabBar.isHidden = true

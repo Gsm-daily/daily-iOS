@@ -11,21 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class SignInViewController: BaseViewController<SignInViewModel>{
+class SignInViewController: BaseViewController<SignInReactor>{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = SignInViewModel.Input(
-            signInButtonTap: signInButton.rx.tap.asObservable(),
-            backSignUpButtonTap: backSignUpButton.rx.tap.asObservable(),
-            forgotPwButtonTap: forgotPwButton.rx.tap.asObservable()
-        )
-        let output = viewModel.transVC(input: input)
     }
     
     private let signInText = UILabel().then {

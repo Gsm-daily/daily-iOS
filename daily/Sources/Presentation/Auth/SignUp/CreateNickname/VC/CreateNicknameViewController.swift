@@ -11,20 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class CreateNicknameViewController: BaseViewController<CreateNicknameViewModel>{
+class CreateNicknameViewController: BaseViewController<CreateNicknameReactor>{
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = CreateNicknameViewModel.Input(
-            backSignInButtonTap: backSignInButton.rx.tap.asObservable(),
-            checkButtonTap: checkButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
     
     private let signUpText = UILabel().then {

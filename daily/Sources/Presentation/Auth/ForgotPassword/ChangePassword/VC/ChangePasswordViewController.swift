@@ -11,20 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class ChangePasswordViewController: BaseViewController<ChangePasswordViewModel>{
+class ChangePasswordViewController: BaseViewController<ChangePasswordReactor>{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = ChangePasswordViewModel.Input(
-            backSignInButtonTap: backSignInButton.rx.tap.asObservable(),
-            finishButtonTap: finishButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
     
     private let findPasswordText = UILabel().then {
