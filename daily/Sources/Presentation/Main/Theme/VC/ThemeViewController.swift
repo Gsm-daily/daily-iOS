@@ -11,7 +11,7 @@ import Then
 import RxCocoa
 import RxSwift
 
-class ThemeViewController: BaseViewController<ThemeViewModel> {
+class ThemeViewController: BaseViewController<ThemeReactor> {
 
     override func viewDidLoad() {
         self.tabBarController?.tabBar.isHidden = true

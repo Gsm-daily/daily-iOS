@@ -11,20 +11,12 @@ import SnapKit
 import RxCocoa
 import ViewAnimator
 
-class IntroViewController: BaseViewController<IntroViewModel>{
+class IntroViewController: BaseViewController<IntroReactor>{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
         setAnimation()
         self.navigationItem.backButton(title: "")
-    }
-    private func bindViewModel() {
-        let input = IntroViewModel.Input(
-            signInButtonTap: signInButton.rx.tap.asObservable(),
-            signUpButtonTap: signUpButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
 
     private let backgroundImage = UIImageView().then{
@@ -175,6 +167,17 @@ class IntroViewController: BaseViewController<IntroViewModel>{
             $0.top.equalTo(signUpButton.snp.bottom).offset(16)
             $0.trailing.equalTo(view.snp.trailing).inset((bounds.width) / 3.86)
         }
+    }
+    
+    override func bindView(reactor: IntroReactor) {
+        signInButton.rx.tap
+            .map { IntroReactor.Action.signInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        signUpButton.rx.tap
+            .map { IntroReactor.Action.signUpButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 
 }

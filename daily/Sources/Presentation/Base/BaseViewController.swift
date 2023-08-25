@@ -1,22 +1,15 @@
-//
-//  BaseViewController.swift
-//  daily
-//
-//  Created by 선민재 on 2022/10/27.
-//
-
 import UIKit
 import RxCocoa
 import RxSwift
 
 class BaseViewController<T>: UIViewController {
-    let viewModel: T
+    let reactor: T
     var disposeBag = DisposeBag()
     let bounds = UIScreen.main.bounds
 
     
-    init(_ viewModel: T) {
-        self.viewModel = viewModel
+    init(_ reactor: T) {
+        self.reactor = reactor
         super .init(nibName: nil, bundle: nil)
     }
     
@@ -30,6 +23,7 @@ class BaseViewController<T>: UIViewController {
         view.backgroundColor = .white
         addView()
         setLayout()
+        bind(reactor: reactor)
     }
     
     func addView() {
@@ -39,6 +33,16 @@ class BaseViewController<T>: UIViewController {
     func setLayout() {
         
     }
+    
+    func bind(reactor: T) {
+        bindView(reactor: reactor)
+        bindAction(reactor: reactor)
+        bindState(reactor: reactor)
+    }
+    
+    func bindView(reactor: T) {}
+    func bindAction(reactor: T) {}
+    func bindState(reactor: T) {}
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)

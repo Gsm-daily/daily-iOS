@@ -7,7 +7,7 @@
 
 import UIKit
 
-class SeletThemeViewController: BaseViewController<SelectThemeViewModel> {
+class SeletThemeViewController: BaseViewController<SelectThemeReactor> {
 
     override func viewDidLoad() {
         super.viewDidLoad()

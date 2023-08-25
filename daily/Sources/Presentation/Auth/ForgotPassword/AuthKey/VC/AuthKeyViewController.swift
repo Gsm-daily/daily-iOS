@@ -12,7 +12,7 @@ import RxCocoa
 import RxFlow
 import DPOTPView
 
-class AuthKeyViewController: BaseViewController<AuthKeyViewModel>{
+class AuthKeyViewController: BaseViewController<AuthKeyReactor>{
     
     override func viewDidLoad(){
         super.viewDidLoad()

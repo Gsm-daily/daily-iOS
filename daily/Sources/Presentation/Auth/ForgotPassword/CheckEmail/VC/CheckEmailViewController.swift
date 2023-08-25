@@ -11,20 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class CheckEmailViewController: BaseViewController<CheckEmailViewModel>{
+class CheckEmailViewController: BaseViewController<CheckEmailReactor>{
 
     override func viewDidLoad(){
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = CheckEmailViewModel.Input(
-            backSignInButtonTap: backSignInButton.rx.tap.asObservable(),
-            getNumButtonTap: getNumButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
     
     private let findPasswordText = UILabel().then {
@@ -127,6 +118,17 @@ class CheckEmailViewController: BaseViewController<CheckEmailViewModel>{
             $0.top.equalTo(getNumButton.snp.bottom).offset(16)
             $0.centerX.equalToSuperview()
         }
+    }
+    
+    override func bindView(reactor: CheckEmailReactor) {
+        getNumButton.rx.tap
+            .map { CheckEmailReactor.Action.getNumButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        backSignInButton.rx.tap
+            .map { CheckEmailReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
     
 }

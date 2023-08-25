@@ -16,6 +16,6 @@ extension HomeViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalend
         dateFormatter.dateFormat = "yyyy년 MM월 dd일"
         print(dateFormatter.string(from: date))
         self.navigationItem.backButton(title: dateFormatter.string(from: date))
-        viewModel.pushDailyVC()
+        self.reactor.pushDailyVC()
     }
 }

@@ -11,20 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class CreatePwViewController: BaseViewController<CreatePwViewModel>{
+class CreatePwViewController: BaseViewController<CreatePwReactor>{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = CreatePwViewModel.Input(
-            backSignInButtonTap: backSignInButton.rx.tap.asObservable(),
-            nextButtonTap: nextButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
     
     private let signUpText = UILabel().then {
@@ -140,4 +131,14 @@ class CreatePwViewController: BaseViewController<CreatePwViewModel>{
         }
     }
     
+    override func bindView(reactor: CreatePwReactor) {
+        backSignInButton.rx.tap
+            .map { CreatePwReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        nextButton.rx.tap
+            .map { CreatePwReactor.Action.nextButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 }

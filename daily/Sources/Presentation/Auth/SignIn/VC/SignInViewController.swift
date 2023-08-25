@@ -11,21 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class SignInViewController: BaseViewController<SignInViewModel>{
+class SignInViewController: BaseViewController<SignInReactor>{
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = SignInViewModel.Input(
-            signInButtonTap: signInButton.rx.tap.asObservable(),
-            backSignUpButtonTap: backSignUpButton.rx.tap.asObservable(),
-            forgotPwButtonTap: forgotPwButton.rx.tap.asObservable()
-        )
-        let output = viewModel.transVC(input: input)
     }
     
     private let signInText = UILabel().then {
@@ -176,6 +166,21 @@ class SignInViewController: BaseViewController<SignInViewModel>{
             $0.leading.equalTo(firstTimeDailyText.snp.trailing).offset(4)
             $0.height.equalTo(14)
         }
+    }
+    
+    override func bindView(reactor: SignInReactor) {
+        backSignUpButton.rx.tap
+            .map { SignInReactor.Action.backSignUpButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        signInButton.rx.tap
+            .map { SignInReactor.Action.signInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        forgotPwButton.rx.tap
+            .map { SignInReactor.Action.forgotPwButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 
 }

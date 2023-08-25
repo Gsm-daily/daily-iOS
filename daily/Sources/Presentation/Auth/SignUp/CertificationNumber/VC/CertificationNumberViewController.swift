@@ -12,7 +12,7 @@ import RxCocoa
 import RxFlow
 import DPOTPView
 
-class CertificationNumberViewController: BaseViewController<CertificationNumberViewModel>{
+class CertificationNumberViewController: BaseViewController<CertificationNumberReactor>{
     
     override func viewDidLoad(){
         super.viewDidLoad()

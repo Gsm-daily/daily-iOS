@@ -11,20 +11,11 @@ import Then
 import RxCocoa
 import RxFlow
 
-class ChangePasswordViewController: BaseViewController<ChangePasswordViewModel>{
+class ChangePasswordViewController: BaseViewController<ChangePasswordReactor>{
     
     override func viewDidLoad(){
         super.viewDidLoad()
-        bindViewModel()
         self.navigationItem.backButton(title: "")
-    }
-    
-    private func bindViewModel() {
-        let input = ChangePasswordViewModel.Input(
-            backSignInButtonTap: backSignInButton.rx.tap.asObservable(),
-            finishButtonTap: finishButton.rx.tap.asObservable()
-        )
-        viewModel.transVC(input: input)
     }
     
     private let findPasswordText = UILabel().then {
@@ -141,6 +132,17 @@ class ChangePasswordViewController: BaseViewController<ChangePasswordViewModel>{
             $0.top.equalTo(finishButton.snp.bottom).offset(16)
             $0.centerX.equalToSuperview()
         }
+    }
+    
+    override func bindView(reactor: ChangePasswordReactor) {
+        finishButton.rx.tap
+            .map { ChangePasswordReactor.Action.finishButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        backSignInButton.rx.tap
+            .map { ChangePasswordReactor.Action.backSignInButtonTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
     
 }

@@ -58,63 +58,63 @@ class LoginFlow: Flow {
     }
     
     private func navigateToLogin() -> FlowContributors {
-        let vm = IntroViewModel()
+        let vm = IntroReactor()
         let vc = IntroViewController(vm)
         self.rootViewController.setViewControllers([vc], animated: false)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigateToSignIn() -> FlowContributors {
-        let vm = SignInViewModel()
+        let vm = SignInReactor()
         let vc = SignInViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigateToCreatePw() -> FlowContributors {
-        let vm = CreatePwViewModel()
+        let vm = CreatePwReactor()
         let vc = CreatePwViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigateToCreateEmail() -> FlowContributors {
-        let vm = CreateEmailViewModel()
+        let vm = CreateEmailReactor()
         let vc = CreateEmailViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigationToCertificationNumber() -> FlowContributors {
-        let vm = CertificationNumberViewModel()
+        let vm = CertificationNumberReactor()
         let vc = CertificationNumberViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigationToCreateNickname() -> FlowContributors {
-        let vm = CreateNicknameViewModel()
+        let vm = CreateNicknameReactor()
         let vc = CreateNicknameViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigationToForgotPassword() -> FlowContributors {
-        let vm = CheckEmailViewModel()
+        let vm = CheckEmailReactor()
         let vc = CheckEmailViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigationToAuthKey() -> FlowContributors {
-        let vm = AuthKeyViewModel()
+        let vm = AuthKeyReactor()
         let vc = AuthKeyViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }
     
     private func navigationToChangePassword() -> FlowContributors {
-        let vm = ChangePasswordViewModel()
+        let vm = ChangePasswordReactor()
         let vc = ChangePasswordViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
