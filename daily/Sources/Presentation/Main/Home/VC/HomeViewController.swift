@@ -29,15 +29,8 @@ class HomeViewController: BaseViewController<HomeReactor>{
         $0.appearance.headerTitleColor = UIColor(red: 28/255, green: 28/255, blue: 30/255, alpha: 1.0)
         $0.appearance.weekdayTextColor = UIColor(red: 28/255, green: 28/255, blue: 30/255, alpha: 1.0)
         $0.appearance.headerDateFormat = "YYYY년 M월"
-        $0.calendarWeekdayView.weekdayLabels[0].text = "S"
-        $0.calendarWeekdayView.weekdayLabels[1].text = "M"
-        $0.calendarWeekdayView.weekdayLabels[2].text = "T"
-        $0.calendarWeekdayView.weekdayLabels[3].text = "W"
-        $0.calendarWeekdayView.weekdayLabels[4].text = "T"
-        $0.calendarWeekdayView.weekdayLabels[5].text = "F"
-        $0.calendarWeekdayView.weekdayLabels[6].text = "S"
     }
-    
+        
     private let springBackground = UIImageView().then{
         $0.image = UIImage(named: "Summer.svg")
     }
