@@ -20,7 +20,6 @@
 		2E592C2094EDCD847E834EBB /* TabBarFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 691765455429189503736CAB /* TabBarFlow.swift */; };
 		2EED616CF9380AEBA12344ED /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = 7B980D196817B225807FC212 /* Gifu */; };
 		2EF442DF5B139338AD219525 /* HomeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6361B004F07CF8F69E4C7C7 /* HomeReactor.swift */; };
-		2F822FCEBFA07CEFE1A6257C /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCB3F4DB7344B1CE0E088328 /* OnBoardingViewController.swift */; };
 		3426BDC2163BC6E99CAE3526 /* CheckEmailReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB518431739AEC9970A41ED5 /* CheckEmailReactor.swift */; };
 		34D51E36ED2395B84B77136E /* CreateNicknameReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 97C573414B9B2E3046BC588D /* CreateNicknameReactor.swift */; };
 		3EDCA5167A36C5242796029F /* Button.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14AA882651C9DC5E022246A /* Button.swift */; };
@@ -37,7 +36,7 @@
 		6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3491208521B3E8169C06E05 /* DailyTextField.swift */; };
 		7451C0F96296471111388C84 /* DailyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92D733B6F0C19ADB5719DD /* DailyButton.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
-		7FA3E8AB16BE9308CC1EB09C /* ThemeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D4B551081EC04E8E7550A20B /* ThemeReactor.swift */; };
+		77632C802A9DE30C007BB3C0 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */; };
@@ -54,6 +53,7 @@
 		B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */; };
 		B2476D54C52109FB2C92EE74 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A50F16344FF02C73181D40 /* CertificationNumberViewController.swift */; };
 		B7C61BB5F8A714D3ACB8753A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FBA1ABED08AF315EBF6171B /* Assets.xcassets */; };
+		BC96A28034926DB7C3C48125 /* OnBoardingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78601977D97D1D764E4212EB /* OnBoardingReactor.swift */; };
 		BEF44969312CDD811F3AAE8F /* DailyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 313A6E7D517BB97D5372BFDC /* DailyLabel.swift */; };
 		C66CE945EC3B50BFE5B3241A /* AuthKeyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 174D86E5992588AD132CBFE2 /* AuthKeyViewController.swift */; };
 		C69BC766D68D8EF1095658D0 /* AuthKeyReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE620C8C0181E2A767746393 /* AuthKeyReactor.swift */; };
@@ -66,6 +66,7 @@
 		D67BA2949D2268FC846C569F /* ChangePasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C5389540FBBBFFCE313651B /* ChangePasswordViewController.swift */; };
 		D88A6562F87A10AEC14BB316 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */; };
 		DF4C49B3503340514400D72E /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27437CE8A61C216F99AFE630 /* SignInViewController.swift */; };
+		DF79617F0AEEA0E72C934FC2 /* ThemeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1BCD441C29BA9AC5A99F975 /* ThemeReactor.swift */; };
 		E1E0DE81D7267DF93C7B1CC9 /* CreateEmailReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 06885F4B3A1FC8295D0706B5 /* CreateEmailReactor.swift */; };
 		E22EFF1299BEC98482A82ABB /* ForgotPasswordReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FABECB8E00D4F5B08320F27 /* ForgotPasswordReactor.swift */; };
 		E579EE831A3B930382FCEE8A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D11761700097E8119C86D39D /* RxCocoa */; };
@@ -76,7 +77,7 @@
 		F64DEA2F5E24FA1225BE4661 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D79435020602010C42CBEB /* DailyViewController.swift */; };
 		F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6655222829756C4F93636 /* SplashViewController.swift */; };
 		FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABA02284EDBF20957D6EA9 /* DailyNavigation.swift */; };
-		FE3CC26752EC86D7B08BCFEE /* OnBoardingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDC29D6BFFA9F0E75655EE4E /* OnBoardingReactor.swift */; };
+		FF7B648B273A54AE1571F773 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024962F4EB456C656CF7594E /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -94,6 +95,7 @@
 
 /* Begin PBXFileReference section */
 		01EC2A7997365D527651AD00 /* DailyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTabBar.swift; sourceTree = "<group>"; };
+		024962F4EB456C656CF7594E /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
 		041E3DD10BB174D0AC839FA5 /* DailyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyColor.swift; sourceTree = "<group>"; };
 		06885F4B3A1FC8295D0706B5 /* CreateEmailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateEmailReactor.swift; sourceTree = "<group>"; };
 		08545AD2F29EFA16514FE963 /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
@@ -120,6 +122,8 @@
 		67A0B8B1234048F443AE7B99 /* CreatePwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePwViewController.swift; sourceTree = "<group>"; };
 		691765455429189503736CAB /* TabBarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlow.swift; sourceTree = "<group>"; };
 		76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseURL.swift; path = daily/Sources/Data/General/BaseURL.swift; sourceTree = SOURCE_ROOT; };
+		78601977D97D1D764E4212EB /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		85477FFC6164F75CBA4021DB /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
@@ -136,6 +140,7 @@
 		AAA6655222829756C4F93636 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		AC92D733B6F0C19ADB5719DD /* DailyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyButton.swift; sourceTree = "<group>"; };
 		AE936B3692DEFC9879F6AF4E /* SelectThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeCell.swift; sourceTree = "<group>"; };
+		B1BCD441C29BA9AC5A99F975 /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		B1FDE16182F588DC05C7FCBB /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		B3491208521B3E8169C06E05 /* DailyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTextField.swift; sourceTree = "<group>"; };
 		B6361B004F07CF8F69E4C7C7 /* HomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReactor.swift; sourceTree = "<group>"; };
@@ -144,15 +149,12 @@
 		CE620C8C0181E2A767746393 /* AuthKeyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthKeyReactor.swift; sourceTree = "<group>"; };
 		D14AA882651C9DC5E022246A /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
 		D23B51E639CC25049DDD8D2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
-		D4B551081EC04E8E7550A20B /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		D6C84EB7ED670B27E5CFFA42 /* DailyCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalender.swift; sourceTree = "<group>"; };
 		DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlow.swift; sourceTree = "<group>"; };
 		EB518431739AEC9970A41ED5 /* CheckEmailReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailReactor.swift; sourceTree = "<group>"; };
 		F3BE45DE2C956392C8B00A43 /* CheckEmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CheckEmailViewController.swift; sourceTree = "<group>"; };
 		F7C6610AEA7E2679E4F15AC7 /* ForgotPasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ForgotPasswordViewController.swift; sourceTree = "<group>"; };
 		FC057C128492F249CF21E001 /* DailyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStep.swift; sourceTree = "<group>"; };
-		FCB3F4DB7344B1CE0E088328 /* OnBoardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingViewController.swift; sourceTree = "<group>"; };
-		FDC29D6BFFA9F0E75655EE4E /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -231,14 +233,6 @@
 			path = Items;
 			sourceTree = "<group>";
 		};
-		17AD9B51C1C14F92A9D42866 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				FCB3F4DB7344B1CE0E088328 /* OnBoardingViewController.swift */,
-			);
-			path = VC;
-			sourceTree = "<group>";
-		};
 		18F9D4BD9AF3111628268DAA /* ForgotPassword */ = {
 			isa = PBXGroup;
 			children = (
@@ -303,8 +297,8 @@
 		3C3EE24C66BE512F09D761F4 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
+				8BDE3F4ECFD72C871E68F89D /* Reactor */,
 				77F15DFB7FE9349DDAF877C3 /* VC */,
-				62E2035326ED0DFD7187A4E7 /* Reactor */,
 			);
 			path = Theme;
 			sourceTree = "<group>";
@@ -345,6 +339,7 @@
 		49045322D3A18070F8FCE378 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
+				77632C7D2A9DE2E4007BB3C0 /* Data */,
 				5FDCDB9FB8A175E6A0CB52D2 /* Application */,
 				118EF4BF18A9AE4B0E62650C /* DesignSystem */,
 				E871A488A0AF57CDACD60984 /* Extension */,
@@ -434,12 +429,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		62E2035326ED0DFD7187A4E7 /* Reactor */ = {
+		656E8A27438A94EBB645A276 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				D4B551081EC04E8E7550A20B /* ThemeReactor.swift */,
+				024962F4EB456C656CF7594E /* OnBoardingViewController.swift */,
 			);
-			path = Reactor;
+			path = VC;
 			sourceTree = "<group>";
 		};
 		6808937197FDD8C730D008DF /* VC */ = {
@@ -474,6 +469,22 @@
 				9FABECB8E00D4F5B08320F27 /* ForgotPasswordReactor.swift */,
 			);
 			path = Reactor;
+			sourceTree = "<group>";
+		};
+		77632C7D2A9DE2E4007BB3C0 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				77632C7E2A9DE2EC007BB3C0 /* General */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		77632C7E2A9DE2EC007BB3C0 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */,
+			);
+			path = General;
 			sourceTree = "<group>";
 		};
 		77F15DFB7FE9349DDAF877C3 /* VC */ = {
@@ -518,6 +529,14 @@
 			path = Reactor;
 			sourceTree = "<group>";
 		};
+		8BDE3F4ECFD72C871E68F89D /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				B1BCD441C29BA9AC5A99F975 /* ThemeReactor.swift */,
+			);
+			path = Reactor;
+			sourceTree = "<group>";
+		};
 		939DF495E6CDDF48950E4F7A /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -532,6 +551,15 @@
 				973BE73C2EDFC4F1917CA16D /* ChangePasswordReactor.swift */,
 			);
 			path = Reactor;
+			sourceTree = "<group>";
+		};
+		94A4FA28FB6C256B22BA6EFE /* OnBoarding */ = {
+			isa = PBXGroup;
+			children = (
+				9C7A5D57D084EF2142D50603 /* Reactor */,
+				656E8A27438A94EBB645A276 /* VC */,
+			);
+			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 		94D10B8FE966BC46D71E90DD /* SignIn */ = {
@@ -570,6 +598,14 @@
 				2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		9C7A5D57D084EF2142D50603 /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				78601977D97D1D764E4212EB /* OnBoardingReactor.swift */,
+			);
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		9D879D9EE64D3EE9150399A4 /* TextField */ = {
@@ -626,7 +662,7 @@
 			isa = PBXGroup;
 			children = (
 				18F9D4BD9AF3111628268DAA /* ForgotPassword */,
-				E9932634138FE60D92AF393E /* OnBoarding */,
+				94A4FA28FB6C256B22BA6EFE /* OnBoarding */,
 				94D10B8FE966BC46D71E90DD /* SignIn */,
 				9AA5DA56218D5570576569DC /* SignUp */,
 			);
@@ -746,23 +782,6 @@
 				872463D65AD4F870179A8AA7 /* TextField.swift */,
 			);
 			path = Extension;
-			sourceTree = "<group>";
-		};
-		E90C44F61FA39E92430B8444 /* Reactor */ = {
-			isa = PBXGroup;
-			children = (
-				FDC29D6BFFA9F0E75655EE4E /* OnBoardingReactor.swift */,
-			);
-			path = Reactor;
-			sourceTree = "<group>";
-		};
-		E9932634138FE60D92AF393E /* OnBoarding */ = {
-			isa = PBXGroup;
-			children = (
-				E90C44F61FA39E92430B8444 /* Reactor */,
-				17AD9B51C1C14F92A9D42866 /* VC */,
-			);
-			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 		EA904FCC21004ECCF6A2068E /* Derived */ = {
@@ -938,6 +957,7 @@
 				B07B5846C81EB0FCE7EAD133 /* DailyStep.swift in Sources */,
 				7451C0F96296471111388C84 /* DailyButton.swift in Sources */,
 				6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */,
+				77632C802A9DE30C007BB3C0 /* BaseURL.swift in Sources */,
 				3EDCA5167A36C5242796029F /* Button.swift in Sources */,
 				5A896939B42541F731A4E59A /* DailyCalender.swift in Sources */,
 				CBD97864F9BC7917CEF3279C /* DailyColor.swift in Sources */,
@@ -953,8 +973,8 @@
 				A237C7D722D7CC4A0F6A2280 /* CheckEmailViewController.swift in Sources */,
 				E22EFF1299BEC98482A82ABB /* ForgotPasswordReactor.swift in Sources */,
 				437B7836981595C35A73B1EB /* ForgotPasswordViewController.swift in Sources */,
-				FE3CC26752EC86D7B08BCFEE /* OnBoardingReactor.swift in Sources */,
-				2F822FCEBFA07CEFE1A6257C /* OnBoardingViewController.swift in Sources */,
+				BC96A28034926DB7C3C48125 /* OnBoardingReactor.swift in Sources */,
+				FF7B648B273A54AE1571F773 /* OnBoardingViewController.swift in Sources */,
 				D46A0BD7484422991C2191DA /* SignInReactor.swift in Sources */,
 				DF4C49B3503340514400D72E /* SignInViewController.swift in Sources */,
 				D3A333F2D52B5E4CC42C5E88 /* CertificationNumberReactor.swift in Sources */,
@@ -979,8 +999,8 @@
 				D88A6562F87A10AEC14BB316 /* ProfileViewModel.swift in Sources */,
 				E6CD2EC29EEF9D12528BB29B /* ProfileViewController.swift in Sources */,
 				5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */,
+				DF79617F0AEEA0E72C934FC2 /* ThemeReactor.swift in Sources */,
 				293B6D49E612FBF54B2307E2 /* ThemeViewController.swift in Sources */,
-				7FA3E8AB16BE9308CC1EB09C /* ThemeReactor.swift in Sources */,
 				F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */,
 				B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */,
 			);
