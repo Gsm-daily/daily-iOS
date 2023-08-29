@@ -38,6 +38,7 @@
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
 		77632C802A9DE30C007BB3C0 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */; };
 		77632C842A9DE3C4007BB3C0 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C832A9DE3C4007BB3C0 /* SignInModel.swift */; };
+		77632C882A9DEC32007BB3C0 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C872A9DEC32007BB3C0 /* SignInRequest.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */; };
@@ -125,6 +126,7 @@
 		76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseURL.swift; path = daily/Sources/Data/General/BaseURL.swift; sourceTree = SOURCE_ROOT; };
 		77632C832A9DE3C4007BB3C0 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = daily/Sources/Data/Model/Auth/SignInModel.swift; sourceTree = SOURCE_ROOT; };
+		77632C872A9DEC32007BB3C0 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInRequest.swift; path = daily/Sources/Data/Request/Auth/SignInRequest.swift; sourceTree = SOURCE_ROOT; };
 		78601977D97D1D764E4212EB /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
@@ -478,6 +480,7 @@
 			children = (
 				77632C7E2A9DE2EC007BB3C0 /* General */,
 				77632C812A9DE391007BB3C0 /* Model */,
+				77632C852A9DEC15007BB3C0 /* Request */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -502,6 +505,22 @@
 			isa = PBXGroup;
 			children = (
 				77632C832A9DE3C4007BB3C0 /* SignInModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		77632C852A9DEC15007BB3C0 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				77632C862A9DEC20007BB3C0 /* Auth */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
+		77632C862A9DEC20007BB3C0 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				77632C872A9DEC32007BB3C0 /* SignInRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -982,6 +1001,7 @@
 				5A896939B42541F731A4E59A /* DailyCalender.swift in Sources */,
 				CBD97864F9BC7917CEF3279C /* DailyColor.swift in Sources */,
 				BEF44969312CDD811F3AAE8F /* DailyLabel.swift in Sources */,
+				77632C882A9DEC32007BB3C0 /* SignInRequest.swift in Sources */,
 				FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */,
 				880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */,
 				A3B731C69E708C663A022F31 /* TextField.swift in Sources */,
