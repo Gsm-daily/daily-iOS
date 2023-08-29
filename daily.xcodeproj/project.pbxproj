@@ -40,6 +40,7 @@
 		77632C842A9DE3C4007BB3C0 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C832A9DE3C4007BB3C0 /* SignInModel.swift */; };
 		77632C882A9DEC32007BB3C0 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C872A9DEC32007BB3C0 /* SignInRequest.swift */; };
 		77632C8C2A9DEC9F007BB3C0 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C8B2A9DEC9F007BB3C0 /* AuthServices.swift */; };
+		77632C912A9EBBE4007BB3C0 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C902A9EBBE4007BB3C0 /* SignUpRequest.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */; };
@@ -129,6 +130,7 @@
 		77632C832A9DE3C4007BB3C0 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = daily/Sources/Data/Model/Auth/SignInModel.swift; sourceTree = SOURCE_ROOT; };
 		77632C872A9DEC32007BB3C0 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInRequest.swift; path = daily/Sources/Data/Request/Auth/SignInRequest.swift; sourceTree = SOURCE_ROOT; };
 		77632C8B2A9DEC9F007BB3C0 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthServices.swift; path = daily/Sources/Data/Services/Auth/AuthServices.swift; sourceTree = SOURCE_ROOT; };
+		77632C902A9EBBE4007BB3C0 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpRequest.swift; path = daily/Sources/Data/Request/Auth/SignUpRequest.swift; sourceTree = SOURCE_ROOT; };
 		78601977D97D1D764E4212EB /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
@@ -524,6 +526,7 @@
 			isa = PBXGroup;
 			children = (
 				77632C872A9DEC32007BB3C0 /* SignInRequest.swift */,
+				77632C902A9EBBE4007BB3C0 /* SignUpRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -1061,6 +1064,7 @@
 				5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */,
 				DF79617F0AEEA0E72C934FC2 /* ThemeReactor.swift in Sources */,
 				293B6D49E612FBF54B2307E2 /* ThemeViewController.swift in Sources */,
+				77632C912A9EBBE4007BB3C0 /* SignUpRequest.swift in Sources */,
 				F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */,
 				B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */,
 			);
