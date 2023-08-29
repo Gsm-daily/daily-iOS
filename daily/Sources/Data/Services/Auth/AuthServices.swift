@@ -3,6 +3,7 @@ import Moya
 
 enum AuthServices {
     case signIn(param: SignInRequest)
+    case signUp(param: SignUpRequest)
 }
 
 
@@ -14,13 +15,15 @@ extension AuthServices: TargetType {
     var path: String {
         switch self {
         case .signIn:
-            return "/auth/signin/"
+            return "/auth/signin"
+        case .signUp:
+            return "/auth/signup"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .signIn:
+        case .signIn, .signUp:
             return .post
         }
     }
@@ -32,6 +35,8 @@ extension AuthServices: TargetType {
     var task: Task {
         switch self {
         case let .signIn(param):
+            return .requestJSONEncodable(param)
+        case let .signUp(param):
             return .requestJSONEncodable(param)
         }
     }
