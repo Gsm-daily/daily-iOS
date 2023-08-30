@@ -5,6 +5,7 @@ enum AuthServices {
     case signIn(param: SignInRequest)
     case signUp(param: SignUpRequest)
     case checkEmail(email: String)
+    case checkName(name: String)
 }
 
 
@@ -21,12 +22,14 @@ extension AuthServices: TargetType {
             return "/auth/signup"
         case .checkEmail:
             return "/auth/email"
+        case .checkName:
+            return "/auth/name"
         }
     }
     
     var method: Moya.Method {
         switch self {
-        case .signIn, .signUp, .checkEmail:
+        case .signIn, .signUp, .checkEmail, .checkName:
             return .post
         }
     }
@@ -44,6 +47,11 @@ extension AuthServices: TargetType {
         case let .checkEmail(email):
             return .requestParameters(
                 parameters: ["email" : email],
+                encoding: URLEncoding.queryString
+            )
+        case let .checkName(name):
+            return .requestParameters(
+                parameters: ["name" : name],
                 encoding: URLEncoding.queryString
             )
         }
