@@ -3,8 +3,9 @@ import RxFlow
 import RxCocoa
 import RxSwift
 import ReactorKit
+import AuthenticationServices
 
-class OnBoardingReactor: Reactor, Stepper{
+class OnBoardingReactor: NSObject, Reactor, Stepper{
     // MARK: - Properties
     
     var initialState: State
@@ -14,8 +15,7 @@ class OnBoardingReactor: Reactor, Stepper{
     // MARK: - Reactor
     
     enum Action {
-        case signUpButtonTap
-        case signInButtonTap
+        case signInWithAppleButtonDidTap
     }
     
     enum Mutation {
@@ -27,7 +27,7 @@ class OnBoardingReactor: Reactor, Stepper{
     }
     
     // MARK: - Init
-    init() {
+    override init() {
         self.initialState = State()
     }
 }
@@ -36,23 +36,26 @@ class OnBoardingReactor: Reactor, Stepper{
 extension OnBoardingReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case .signUpButtonTap:
-            return signUpButtonTap()
-        case .signInButtonTap:
-            return signInButtonTap()
+        case .signInWithAppleButtonDidTap:
+            return signInWithAppleButtonDidTap()
         }
     }
 }
 
 // MARK: - Method
 private extension OnBoardingReactor {
-    private func signUpButtonTap() -> Observable<Mutation> {
-        self.steps.accept(DailyStep.createEmailIsRequired)
+    private func signInWithAppleButtonDidTap() -> Observable<Mutation> {
+        let appleIDProvider = ASAuthorizationAppleIDProvider()
+        let request = appleIDProvider.createRequest()
+        request.requestedScopes = [.fullName, .email]
+                
+        let controller = ASAuthorizationController(authorizationRequests: [request])
+        controller.delegate = self
+        controller.performRequests()
         return .empty()
     }
+}
+
+extension OnBoardingReactor: ASAuthorizationControllerDelegate {
     
-    private func signInButtonTap() -> Observable<Mutation> {
-        self.steps.accept(DailyStep.signInIsRequired)
-        return .empty()
-    }
 }
