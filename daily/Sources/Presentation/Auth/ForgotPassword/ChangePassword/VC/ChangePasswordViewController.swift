@@ -58,7 +58,7 @@ class ChangePasswordViewController: BaseViewController<ChangePasswordReactor>{
             ofSize: 12,
             weight: .regular
         )
-        $0.textColor = UIColor.dailyLight!
+        $0.textColor = UIColor.n40!
     }
 
     private var backSignInButton = UIButton().then {

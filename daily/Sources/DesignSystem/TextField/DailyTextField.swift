@@ -33,7 +33,7 @@ public final class DailyTextField: UITextField {
     func addLeftImage(_ image: UIImage) {
         iconView.image = image
         iconView.image = image.withRenderingMode(.alwaysTemplate)
-        iconView.tintColor = .dailyLight
+        iconView.tintColor = .n40
         let iconContainerView: UIView = UIView(
             frame:CGRect(
                 x: 0,
@@ -73,7 +73,7 @@ public final class DailyTextField: UITextField {
         let didBecomeFirstResponder = super.becomeFirstResponder()
         if didBecomeFirstResponder {
             self.layer.borderWidth = 1
-            self.layer.borderColor = UIColor.mainColor?.cgColor
+            self.layer.borderColor = UIColor.p20?.cgColor
             self.iconView.tintColor = .black
         }
         return didBecomeFirstResponder
@@ -84,7 +84,7 @@ public final class DailyTextField: UITextField {
         if didResignFirstResponder {
             self.layer.borderWidth = 0
             self.layer.borderColor = nil
-            self.iconView.tintColor = .dailyLight
+            self.iconView.tintColor = .n40
         }
         return didResignFirstResponder
     }

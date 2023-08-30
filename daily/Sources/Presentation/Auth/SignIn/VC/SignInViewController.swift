@@ -61,7 +61,7 @@ class SignInViewController: BaseViewController<SignInReactor>{
             weight: .regular
         )
         $0.setTitleColor(
-            UIColor.dailyLight!,
+            UIColor.n40,
             for: .normal
         )
         $0.backgroundColor = UIColor(

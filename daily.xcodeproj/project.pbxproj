@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 55;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -32,17 +32,15 @@
 		5A896939B42541F731A4E59A /* DailyCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C84EB7ED670B27E5CFFA42 /* DailyCalender.swift */; };
 		5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 01EC2A7997365D527651AD00 /* DailyTabBar.swift */; };
 		62C1971703D6233991204E44 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F3517475D7D5BAE4F93FEF /* HomeViewController.swift */; };
+		687D364044989AFA73626E77 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCC0B9AC77F3B3797D6C85 /* BaseURL.swift */; };
 		6B865D0DB37E8EE056205520 /* ChangePasswordReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 973BE73C2EDFC4F1917CA16D /* ChangePasswordReactor.swift */; };
 		6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3491208521B3E8169C06E05 /* DailyTextField.swift */; };
 		7451C0F96296471111388C84 /* DailyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92D733B6F0C19ADB5719DD /* DailyButton.swift */; };
+		769381BCDCEC7B1BC3813E41 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCC8AB41484A93E0A9BF2C /* SignInRequest.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
-		77632C802A9DE30C007BB3C0 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */; };
-		77632C842A9DE3C4007BB3C0 /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C832A9DE3C4007BB3C0 /* SignInModel.swift */; };
-		77632C882A9DEC32007BB3C0 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C872A9DEC32007BB3C0 /* SignInRequest.swift */; };
-		77632C8C2A9DEC9F007BB3C0 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C8B2A9DEC9F007BB3C0 /* AuthServices.swift */; };
-		77632C912A9EBBE4007BB3C0 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 77632C902A9EBBE4007BB3C0 /* SignUpRequest.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
+		86764DA942978ED2346927BA /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */; };
 		880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */; };
 		8B3B0743AEF5FD670479E7EA /* CreateNicknameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A28BC2712AF06495FE52A16B /* CreateNicknameViewController.swift */; };
 		8C77FD650CE1F6F136A40F76 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = FD998E7EB432C259C47421AB /* ReactorKit */; };
@@ -53,6 +51,7 @@
 		A3B731C69E708C663A022F31 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 872463D65AD4F870179A8AA7 /* TextField.swift */; };
 		A5C23E64BB0EF53D774A68F2 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 255BCA0FD915A2805B951C2A /* RxSwift */; };
 		A724FB31F26D80030ADA7A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118197F6E1AD10FB65EA918 /* AppDelegate.swift */; };
+		AE767DF37DCD34564B8C2789 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */; };
 		B07B5846C81EB0FCE7EAD133 /* DailyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC057C128492F249CF21E001 /* DailyStep.swift */; };
 		B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */; };
 		B2476D54C52109FB2C92EE74 /* CertificationNumberViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4A50F16344FF02C73181D40 /* CertificationNumberViewController.swift */; };
@@ -80,6 +79,7 @@
 		F2353E92853E03E0EFA03E29 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D08F3741D6118D193CE504 /* SnapKit */; };
 		F64DEA2F5E24FA1225BE4661 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D79435020602010C42CBEB /* DailyViewController.swift */; };
 		F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6655222829756C4F93636 /* SplashViewController.swift */; };
+		F9F33F448739DEEF2A3ACDE7 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD3C55A85746D6534C6C1B /* SignUpRequest.swift */; };
 		FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABA02284EDBF20957D6EA9 /* DailyNavigation.swift */; };
 		FF7B648B273A54AE1571F773 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024962F4EB456C656CF7594E /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -111,7 +111,9 @@
 		200F75688B95613F7DADEFB4 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
 		27437CE8A61C216F99AFE630 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyShadow.swift; sourceTree = "<group>"; };
+		2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		2ECCC8AB41484A93E0A9BF2C /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		3118197F6E1AD10FB65EA918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		313A6E7D517BB97D5372BFDC /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		32C0ED410F5E3C2C63325A09 /* CreatePwReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePwReactor.swift; sourceTree = "<group>"; };
@@ -122,16 +124,11 @@
 		54F3517475D7D5BAE4F93FEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		587AC24D73A0FB2DFCCC61E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C5389540FBBBFFCE313651B /* ChangePasswordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordViewController.swift; sourceTree = "<group>"; };
+		5EAD3C55A85746D6534C6C1B /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		63A6B3B0EB4AECC6B47618FC /* DailyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReactor.swift; sourceTree = "<group>"; };
 		67A0B8B1234048F443AE7B99 /* CreatePwViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePwViewController.swift; sourceTree = "<group>"; };
 		691765455429189503736CAB /* TabBarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlow.swift; sourceTree = "<group>"; };
 		76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
-		77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = BaseURL.swift; path = daily/Sources/Data/General/BaseURL.swift; sourceTree = SOURCE_ROOT; };
-		77632C832A9DE3C4007BB3C0 /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInModel.swift; path = daily/Sources/Data/Model/Auth/SignInModel.swift; sourceTree = SOURCE_ROOT; };
-		77632C872A9DEC32007BB3C0 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInRequest.swift; path = daily/Sources/Data/Request/Auth/SignInRequest.swift; sourceTree = SOURCE_ROOT; };
-		77632C8B2A9DEC9F007BB3C0 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AuthServices.swift; path = daily/Sources/Data/Services/Auth/AuthServices.swift; sourceTree = SOURCE_ROOT; };
-		77632C902A9EBBE4007BB3C0 /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpRequest.swift; path = daily/Sources/Data/Request/Auth/SignUpRequest.swift; sourceTree = SOURCE_ROOT; };
-		77632C922A9ED122007BB3C0 /* Daily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Daily.entitlements; path = Daily/Daily.entitlements; sourceTree = "<group>"; };
 		78601977D97D1D764E4212EB /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
@@ -139,6 +136,7 @@
 		872463D65AD4F870179A8AA7 /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		8BE91FA13FF4F0615B858F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
+		8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		93ABA02284EDBF20957D6EA9 /* DailyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNavigation.swift; sourceTree = "<group>"; };
 		973BE73C2EDFC4F1917CA16D /* ChangePasswordReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangePasswordReactor.swift; sourceTree = "<group>"; };
 		97C573414B9B2E3046BC588D /* CreateNicknameReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNicknameReactor.swift; sourceTree = "<group>"; };
@@ -146,6 +144,7 @@
 		A28BC2712AF06495FE52A16B /* CreateNicknameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateNicknameViewController.swift; sourceTree = "<group>"; };
 		A4A50F16344FF02C73181D40 /* CertificationNumberViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CertificationNumberViewController.swift; sourceTree = "<group>"; };
 		A79308A0F979726E09C8AC5F /* SelectThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeReactor.swift; sourceTree = "<group>"; };
+		A7FCC0B9AC77F3B3797D6C85 /* BaseURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseURL.swift; sourceTree = "<group>"; };
 		AAA6655222829756C4F93636 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		AC92D733B6F0C19ADB5719DD /* DailyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyButton.swift; sourceTree = "<group>"; };
 		AE936B3692DEFC9879F6AF4E /* SelectThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeCell.swift; sourceTree = "<group>"; };
@@ -196,6 +195,14 @@
 				D01AFE3F31A5B50B8D9BC203 /* TabBar */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		0D513083B7F12C6DA6D1DCB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				D622A13A7C71B606193A3659 /* Auth */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		0D9364F163B259E07C1A2D6B /* Cell */ = {
@@ -303,6 +310,14 @@
 			path = Daily;
 			sourceTree = "<group>";
 		};
+		3BB678426DCE0E9C9EE35FBA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
 		3C3EE24C66BE512F09D761F4 /* Theme */ = {
 			isa = PBXGroup;
 			children = (
@@ -348,8 +363,8 @@
 		49045322D3A18070F8FCE378 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				77632C7D2A9DE2E4007BB3C0 /* Data */,
 				5FDCDB9FB8A175E6A0CB52D2 /* Application */,
+				D2765104718CD819C2A03E93 /* Data */,
 				118EF4BF18A9AE4B0E62650C /* DesignSystem */,
 				E871A488A0AF57CDACD60984 /* Extension */,
 				F1FDED45FA11DE97851255FF /* Presentation */,
@@ -389,6 +404,14 @@
 			path = Reactor;
 			sourceTree = "<group>";
 		};
+		52452C4E8AA7676EC888D762 /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				58B5C6210A10A31FC541002A /* Auth */,
+			);
+			path = Request;
+			sourceTree = "<group>";
+		};
 		56BB277F672ED0CF249FB4BC /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -411,6 +434,15 @@
 				AAA6655222829756C4F93636 /* SplashViewController.swift */,
 			);
 			path = Splash;
+			sourceTree = "<group>";
+		};
+		58B5C6210A10A31FC541002A /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				2ECCC8AB41484A93E0A9BF2C /* SignInRequest.swift */,
+				5EAD3C55A85746D6534C6C1B /* SignUpRequest.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		5C73D80756FFCE6B2AC3B056 /* CreateNickname */ = {
@@ -480,74 +512,6 @@
 			path = Reactor;
 			sourceTree = "<group>";
 		};
-		77632C7D2A9DE2E4007BB3C0 /* Data */ = {
-			isa = PBXGroup;
-			children = (
-				77632C7E2A9DE2EC007BB3C0 /* General */,
-				77632C812A9DE391007BB3C0 /* Model */,
-				77632C852A9DEC15007BB3C0 /* Request */,
-				77632C892A9DEC80007BB3C0 /* Services */,
-			);
-			path = Data;
-			sourceTree = "<group>";
-		};
-		77632C7E2A9DE2EC007BB3C0 /* General */ = {
-			isa = PBXGroup;
-			children = (
-				77632C7F2A9DE30C007BB3C0 /* BaseURL.swift */,
-			);
-			path = General;
-			sourceTree = "<group>";
-		};
-		77632C812A9DE391007BB3C0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				77632C822A9DE3A6007BB3C0 /* Auth */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		77632C822A9DE3A6007BB3C0 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				77632C832A9DE3C4007BB3C0 /* SignInModel.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		77632C852A9DEC15007BB3C0 /* Request */ = {
-			isa = PBXGroup;
-			children = (
-				77632C862A9DEC20007BB3C0 /* Auth */,
-			);
-			path = Request;
-			sourceTree = "<group>";
-		};
-		77632C862A9DEC20007BB3C0 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				77632C872A9DEC32007BB3C0 /* SignInRequest.swift */,
-				77632C902A9EBBE4007BB3C0 /* SignUpRequest.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
-		77632C892A9DEC80007BB3C0 /* Services */ = {
-			isa = PBXGroup;
-			children = (
-				77632C8A2A9DEC90007BB3C0 /* Auth */,
-			);
-			path = Services;
-			sourceTree = "<group>";
-		};
-		77632C8A2A9DEC90007BB3C0 /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-				77632C8B2A9DEC9F007BB3C0 /* AuthServices.swift */,
-			);
-			path = Auth;
-			sourceTree = "<group>";
-		};
 		77F15DFB7FE9349DDAF877C3 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -564,10 +528,17 @@
 			path = VC;
 			sourceTree = "<group>";
 		};
+		7EAB52316D11B1EABB442002 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				3BB678426DCE0E9C9EE35FBA /* Auth */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		7F1E51F85354B9375BA0B4EE = {
 			isa = PBXGroup;
 			children = (
-				77632C922A9ED122007BB3C0 /* Daily.entitlements */,
 				F64079BAE6C0CE82E6C9D3A3 /* Project */,
 				253DD9766443FCDDF7726992 /* Frameworks */,
 				B93FEC9B7E07899A92846908 /* Products */,
@@ -795,12 +766,39 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		D2765104718CD819C2A03E93 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D336B4688E345BF5846E00F6 /* General */,
+				7EAB52316D11B1EABB442002 /* Model */,
+				52452C4E8AA7676EC888D762 /* Request */,
+				0D513083B7F12C6DA6D1DCB8 /* Services */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D336B4688E345BF5846E00F6 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				A7FCC0B9AC77F3B3797D6C85 /* BaseURL.swift */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
 		D573565BC99BD4C5E70C7911 /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
 				C1F6475D383A81EBD5FE3984 /* SignInReactor.swift */,
 			);
 			path = Reactor;
+			sourceTree = "<group>";
+		};
+		D622A13A7C71B606193A3659 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		D79E4F5731C09FFBBACD35BD /* Flow */ = {
@@ -959,6 +957,8 @@
 			isa = PBXProject;
 			attributes = {
 				ORGANIZATIONNAME = Daily;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = A44BFB2ED6C04BB88C116CC5 /* Build configuration list for PBXProject "Daily" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -1013,20 +1013,21 @@
 				842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */,
 				12D12D45A29ACEC07E085197 /* MainFlow.swift in Sources */,
 				C985F4CC767345BBE9694346 /* ProfileFlow.swift in Sources */,
-				77632C842A9DE3C4007BB3C0 /* SignInModel.swift in Sources */,
 				770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */,
 				2E592C2094EDCD847E834EBB /* TabBarFlow.swift in Sources */,
 				51C543B22AD9756D0E2BBF2E /* SceneDelegate.swift in Sources */,
 				B07B5846C81EB0FCE7EAD133 /* DailyStep.swift in Sources */,
+				687D364044989AFA73626E77 /* BaseURL.swift in Sources */,
+				86764DA942978ED2346927BA /* SignInModel.swift in Sources */,
+				769381BCDCEC7B1BC3813E41 /* SignInRequest.swift in Sources */,
+				F9F33F448739DEEF2A3ACDE7 /* SignUpRequest.swift in Sources */,
+				AE767DF37DCD34564B8C2789 /* AuthServices.swift in Sources */,
 				7451C0F96296471111388C84 /* DailyButton.swift in Sources */,
 				6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */,
-				77632C802A9DE30C007BB3C0 /* BaseURL.swift in Sources */,
 				3EDCA5167A36C5242796029F /* Button.swift in Sources */,
 				5A896939B42541F731A4E59A /* DailyCalender.swift in Sources */,
-				77632C8C2A9DEC9F007BB3C0 /* AuthServices.swift in Sources */,
 				CBD97864F9BC7917CEF3279C /* DailyColor.swift in Sources */,
 				BEF44969312CDD811F3AAE8F /* DailyLabel.swift in Sources */,
-				77632C882A9DEC32007BB3C0 /* SignInRequest.swift in Sources */,
 				FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */,
 				880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */,
 				A3B731C69E708C663A022F31 /* TextField.swift in Sources */,
@@ -1066,7 +1067,6 @@
 				5FA433FEC42766B66F8B947C /* DailyTabBar.swift in Sources */,
 				DF79617F0AEEA0E72C934FC2 /* ThemeReactor.swift in Sources */,
 				293B6D49E612FBF54B2307E2 /* ThemeViewController.swift in Sources */,
-				77632C912A9EBBE4007BB3C0 /* SignUpRequest.swift in Sources */,
 				F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */,
 				B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */,
 			);
@@ -1090,9 +1090,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Daily/Daily.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1227,9 +1225,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Daily/Daily.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
