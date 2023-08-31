@@ -49,7 +49,7 @@ class CreateNicknameViewController: BaseViewController<CreateNicknameReactor>{
             ofSize: 12,
             weight: .regular
         )
-        $0.textColor = UIColor.dailyLight!
+        $0.textColor = UIColor.n40
     }
 
     private var backSignInButton = UIButton().then {
@@ -59,7 +59,7 @@ class CreateNicknameViewController: BaseViewController<CreateNicknameReactor>{
             ofSize: 12,
             weight: .bold)
         $0.setTitleColor(
-            UIColor.mainColor!,
+            UIColor.p20,
             for: .normal
         )
         $0.backgroundColor = UIColor(

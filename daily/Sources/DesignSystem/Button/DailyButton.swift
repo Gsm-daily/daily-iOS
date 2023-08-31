@@ -59,7 +59,7 @@ private extension DailyButton {
                 alpha: 1.00
             )
         } else {
-            backgroundColor = UIColor.mainColor!
+            backgroundColor = UIColor.p20!
         }
         setBackgroundColor(backgroundColor, for: .normal)
         setBackgroundColor(backgroundColor.withAlphaComponent(0.8), for: .highlighted)

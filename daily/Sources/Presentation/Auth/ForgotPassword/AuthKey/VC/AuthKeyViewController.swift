@@ -58,7 +58,7 @@ class AuthKeyViewController: BaseViewController<AuthKeyReactor>{
         )
         $0.cornerRadiusTextField = 20
         $0.selectedBorderWidthTextField = 1
-        $0.selectedBorderColorTextField = UIColor.mainColor
+        $0.selectedBorderColorTextField = UIColor.p20
         $0.keyboardType = .numberPad
     }
     
@@ -72,7 +72,7 @@ class AuthKeyViewController: BaseViewController<AuthKeyReactor>{
             ofSize: 14,
             weight: .semibold
         )
-        $0.setTitleColor(UIColor.mainColor, for: .normal)
+        $0.setTitleColor(UIColor.p20, for: .normal)
         $0.backgroundColor = UIColor(
             red: 1,
             green: 1,

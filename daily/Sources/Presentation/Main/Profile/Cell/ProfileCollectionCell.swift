@@ -18,7 +18,7 @@ class ProfileCollectionCell: UICollectionViewCell {
     }
     let dateText = UILabel().then {
         $0.font = UIFont.systemFont(ofSize: 12, weight: .medium)
-        $0.textColor = UIColor.dailyLight
+        $0.textColor = UIColor.n40
     }
     override init(frame: CGRect) {
         super.init(frame: frame)
