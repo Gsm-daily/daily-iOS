@@ -10,13 +10,17 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
     override func viewDidLoad() {
         super.viewDidLoad()
         setAnimation()
-        self.navigationItem.backButton(title: "")
+        visualEffectView.frame = self.view.frame
     }
 
     private let backgroundImage = UIImageView().then{
         $0.image = UIImage(named: "DailyOnboarding.svg")
         $0.contentMode = .scaleAspectFill
     }
+    
+    private let blurEffect = UIBlurEffect(style: .regular)
+
+    private lazy var visualEffectView = UIVisualEffectView(effect: blurEffect)
     
     private let buttonBackgroundView = UIView().then {
         $0.backgroundColor = UIColor(
@@ -67,6 +71,7 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
         ].forEach {
             view.addSubview($0)
         }
+        buttonBackgroundView.addSubview(visualEffectView)
     }
     
     private func setAnimation() {
