@@ -6,6 +6,7 @@ enum AuthServices {
     case signUp(param: SignUpRequest)
     case checkEmail(email: String)
     case checkName(name: String)
+    case reissueToken(refreshToken: String)
 }
 
 
@@ -24,6 +25,8 @@ extension AuthServices: TargetType {
             return "/auth/email"
         case .checkName:
             return "/auth/name"
+        case .reissueToken:
+            return "/auth/reissue"
         }
     }
     
@@ -31,6 +34,8 @@ extension AuthServices: TargetType {
         switch self {
         case .signIn, .signUp, .checkEmail, .checkName:
             return .post
+        case .reissueToken:
+            return .patch
         }
     }
     
@@ -54,11 +59,15 @@ extension AuthServices: TargetType {
                 parameters: ["name" : name],
                 encoding: URLEncoding.queryString
             )
+        case .reissueToken:
+            return .requestPlain
         }
     }
     
     var headers: [String : String]? {
         switch self {
+        case let .reissueToken(refreshToken)
+            return ["Content-Type" : "application/json", "RefreshToken" : refreshToken]
         default:
             return["Content-Type" :"application/json"]
         }
