@@ -1,16 +1,9 @@
-//
-//  AccountServices.swift
-//  Daily
-//
-//  Created by 선민재 on 2023/08/31.
-//  Copyright © 2023 Daily. All rights reserved.
-//
-
 import Foundation
 import Moya
 
 enum AccountServices {
     case choiceTheme(param: ChoiceThemeRequest, authorization: String)
+    case theme(authorization: String)
 }
 
 
@@ -22,7 +15,9 @@ extension AccountServices: TargetType {
     var path: String {
         switch self {
         case .choiceTheme:
-            return  "/account/choice-theme"
+            return "/account/choice-theme"
+        case .theme:
+            return "/account/theme"
         }
     }
     
@@ -30,6 +25,8 @@ extension AccountServices: TargetType {
         switch self {
         case .choiceTheme:
             return .post
+        case .theme:
+            return .get
         }
     }
     
@@ -41,12 +38,14 @@ extension AccountServices: TargetType {
         switch self {
         case let .choiceTheme(param, _):
             return .requestJSONEncodable(param)
+        case .theme:
+            return .requestPlain
         }
     }
     
     var headers: [String : String]? {
         switch self {
-        case let .choiceTheme(_,authorization):
+        case let .choiceTheme(_,authorization), let .theme(authorization):
             return ["Content-Type" :"application/json", "Authorization": authorization]
         default:
             return["Content-Type" :"application/json"]

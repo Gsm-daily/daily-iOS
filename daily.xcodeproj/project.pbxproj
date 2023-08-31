@@ -35,6 +35,7 @@
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
 		778F97FB2AA03B3700FED3E6 /* ChoiceThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */; };
 		778F97FE2AA03B8900FED3E6 /* AccountServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FD2AA03B8900FED3E6 /* AccountServices.swift */; };
+		778F98002AA03CFE00FED3E6 /* ThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		86764DA942978ED2346927BA /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */; };
@@ -107,6 +108,7 @@
 		76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChoiceThemeRequest.swift; path = daily/Sources/Data/Request/Account/ChoiceThemeRequest.swift; sourceTree = SOURCE_ROOT; };
 		778F97FD2AA03B8900FED3E6 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountServices.swift; path = daily/Sources/Data/Services/Account/AccountServices.swift; sourceTree = SOURCE_ROOT; };
+		778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeRequest.swift; path = daily/Sources/Data/Request/Account/ThemeRequest.swift; sourceTree = SOURCE_ROOT; };
 		78601977D97D1D764E4212EB /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
@@ -341,6 +343,7 @@
 			isa = PBXGroup;
 			children = (
 				778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */,
+				778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -767,6 +770,7 @@
 				FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */,
 				880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */,
 				A3B731C69E708C663A022F31 /* TextField.swift in Sources */,
+				778F98002AA03CFE00FED3E6 /* ThemeRequest.swift in Sources */,
 				BC96A28034926DB7C3C48125 /* OnBoardingReactor.swift in Sources */,
 				FF7B648B273A54AE1571F773 /* OnBoardingViewController.swift in Sources */,
 				0DD3ED676F1E577282D6025C /* SelectThemeCell.swift in Sources */,
