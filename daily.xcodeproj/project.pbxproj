@@ -36,6 +36,7 @@
 		778F97FB2AA03B3700FED3E6 /* ChoiceThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */; };
 		778F97FE2AA03B8900FED3E6 /* AccountServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FD2AA03B8900FED3E6 /* AccountServices.swift */; };
 		778F98002AA03CFE00FED3E6 /* ThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */; };
+		778F98052AA03E8500FED3E6 /* ThemeCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F98042AA03E8500FED3E6 /* ThemeCountModel.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		86764DA942978ED2346927BA /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */; };
@@ -109,6 +110,7 @@
 		778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChoiceThemeRequest.swift; path = daily/Sources/Data/Request/Account/ChoiceThemeRequest.swift; sourceTree = SOURCE_ROOT; };
 		778F97FD2AA03B8900FED3E6 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountServices.swift; path = daily/Sources/Data/Services/Account/AccountServices.swift; sourceTree = SOURCE_ROOT; };
 		778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeRequest.swift; path = daily/Sources/Data/Request/Account/ThemeRequest.swift; sourceTree = SOURCE_ROOT; };
+		778F98042AA03E8500FED3E6 /* ThemeCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeCountModel.swift; path = daily/Sources/Data/Model/Account/ThemeCountModel.swift; sourceTree = SOURCE_ROOT; };
 		78601977D97D1D764E4212EB /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
@@ -356,6 +358,14 @@
 			path = Account;
 			sourceTree = "<group>";
 		};
+		778F98032AA03E7A00FED3E6 /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				778F98042AA03E8500FED3E6 /* ThemeCountModel.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
 		77F15DFB7FE9349DDAF877C3 /* VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -367,6 +377,7 @@
 		7EAB52316D11B1EABB442002 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				778F98032AA03E7A00FED3E6 /* Account */,
 				3BB678426DCE0E9C9EE35FBA /* Auth */,
 			);
 			path = Model;
@@ -748,6 +759,7 @@
 				A724FB31F26D80030ADA7A57 /* AppDelegate.swift in Sources */,
 				989F8E60271907C3692AB6F6 /* AppFlow.swift in Sources */,
 				842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */,
+				778F98052AA03E8500FED3E6 /* ThemeCountModel.swift in Sources */,
 				12D12D45A29ACEC07E085197 /* MainFlow.swift in Sources */,
 				C985F4CC767345BBE9694346 /* ProfileFlow.swift in Sources */,
 				770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */,
