@@ -11,19 +11,8 @@ enum DailyStep: Step {
     //MARK: Splash
     case splashIsRequired
     
-    // MARK: Login
+    // MARK: OnBoarding
     case onBoardingIsRequired
-    
-    // MARK: SignUp
-    case createPwIsRequired
-    case createEmailIsRequired
-    case certificationNumberIsRequired
-    case createNicknameIsRequired
-    
-    //MARK: ForgotPassword
-    case forgotPasswordIsRequired
-    case authKeyIsRequired
-    case changePasswordIsRequired
     
     // MARK: Main
     case tabBarIsRequired
