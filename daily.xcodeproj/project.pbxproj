@@ -268,8 +268,6 @@
 			children = (
 				5FDCDB9FB8A175E6A0CB52D2 /* Application */,
 				D2765104718CD819C2A03E93 /* Data */,
-				118EF4BF18A9AE4B0E62650C /* DesignSystem */,
-				E871A488A0AF57CDACD60984 /* Extension */,
 				F1FDED45FA11DE97851255FF /* Presentation */,
 			);
 			path = Sources;
@@ -339,6 +337,25 @@
 				54F3517475D7D5BAE4F93FEF /* HomeViewController.swift */,
 			);
 			path = VC;
+			sourceTree = "<group>";
+		};
+		774DEE2D2AA449B100F1C8EC /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				5774AD069D505A4974BC6AFA /* Splash */,
+				B8D8BD65DFAEAB3D6BB6EDB4 /* Auth */,
+				CA17F2E9B55A4853E58EE395 /* Main */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		774DEE2E2AA449E100F1C8EC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				118EF4BF18A9AE4B0E62650C /* DesignSystem */,
+				E871A488A0AF57CDACD60984 /* Extension */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 		778F97F92AA03B2400FED3E6 /* Account */ = {
@@ -630,10 +647,9 @@
 		F1FDED45FA11DE97851255FF /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
-				B8D8BD65DFAEAB3D6BB6EDB4 /* Auth */,
+				774DEE2E2AA449E100F1C8EC /* Utils */,
+				774DEE2D2AA449B100F1C8EC /* Scene */,
 				9C41F64839C774E2653F3926 /* Base */,
-				CA17F2E9B55A4853E58EE395 /* Main */,
-				5774AD069D505A4974BC6AFA /* Splash */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
