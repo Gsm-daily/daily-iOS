@@ -32,6 +32,7 @@
 		6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3491208521B3E8169C06E05 /* DailyTextField.swift */; };
 		7451C0F96296471111388C84 /* DailyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92D733B6F0C19ADB5719DD /* DailyButton.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
+		772FA07A2AA6EB2700A85275 /* SignInWithAppleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 772FA0792AA6EB2700A85275 /* SignInWithAppleModel.swift */; };
 		778F97FB2AA03B3700FED3E6 /* ChoiceThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */; };
 		778F97FE2AA03B8900FED3E6 /* AccountServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FD2AA03B8900FED3E6 /* AccountServices.swift */; };
 		778F98002AA03CFE00FED3E6 /* ThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */; };
@@ -101,6 +102,7 @@
 		63A6B3B0EB4AECC6B47618FC /* DailyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReactor.swift; sourceTree = "<group>"; };
 		691765455429189503736CAB /* TabBarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlow.swift; sourceTree = "<group>"; };
 		76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		772FA0792AA6EB2700A85275 /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignInWithAppleModel.swift; path = daily/Sources/Data/Model/Auth/SignInWithAppleModel.swift; sourceTree = SOURCE_ROOT; };
 		778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChoiceThemeRequest.swift; path = daily/Sources/Data/Request/Account/ChoiceThemeRequest.swift; sourceTree = SOURCE_ROOT; };
 		778F97FD2AA03B8900FED3E6 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountServices.swift; path = daily/Sources/Data/Services/Account/AccountServices.swift; sourceTree = SOURCE_ROOT; };
 		778F97FF2AA03CFE00FED3E6 /* ThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ThemeRequest.swift; path = daily/Sources/Data/Request/Account/ThemeRequest.swift; sourceTree = SOURCE_ROOT; };
@@ -235,6 +237,7 @@
 		3BB678426DCE0E9C9EE35FBA /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				772FA0792AA6EB2700A85275 /* SignInWithAppleModel.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -278,7 +281,6 @@
 			isa = PBXGroup;
 			children = (
 				778F97F92AA03B2400FED3E6 /* Account */,
-				58B5C6210A10A31FC541002A /* Auth */,
 			);
 			path = Request;
 			sourceTree = "<group>";
@@ -297,13 +299,6 @@
 				AAA6655222829756C4F93636 /* SplashViewController.swift */,
 			);
 			path = Splash;
-			sourceTree = "<group>";
-		};
-		58B5C6210A10A31FC541002A /* Auth */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Auth;
 			sourceTree = "<group>";
 		};
 		5FDCDB9FB8A175E6A0CB52D2 /* Application */ = {
@@ -782,6 +777,7 @@
 				3EDCA5167A36C5242796029F /* Button.swift in Sources */,
 				5A896939B42541F731A4E59A /* DailyCalender.swift in Sources */,
 				CBD97864F9BC7917CEF3279C /* DailyColor.swift in Sources */,
+				772FA07A2AA6EB2700A85275 /* SignInWithAppleModel.swift in Sources */,
 				BEF44969312CDD811F3AAE8F /* DailyLabel.swift in Sources */,
 				FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */,
 				880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */,
