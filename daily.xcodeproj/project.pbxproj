@@ -31,7 +31,6 @@
 		687D364044989AFA73626E77 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCC0B9AC77F3B3797D6C85 /* BaseURL.swift */; };
 		6F8713F7FB3B0578B51D52C1 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3491208521B3E8169C06E05 /* DailyTextField.swift */; };
 		7451C0F96296471111388C84 /* DailyButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC92D733B6F0C19ADB5719DD /* DailyButton.swift */; };
-		769381BCDCEC7B1BC3813E41 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ECCC8AB41484A93E0A9BF2C /* SignInRequest.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
 		778F97FB2AA03B3700FED3E6 /* ChoiceThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FA2AA03B3700FED3E6 /* ChoiceThemeRequest.swift */; };
 		778F97FE2AA03B8900FED3E6 /* AccountServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F97FD2AA03B8900FED3E6 /* AccountServices.swift */; };
@@ -39,7 +38,6 @@
 		778F98052AA03E8500FED3E6 /* ThemeCountModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 778F98042AA03E8500FED3E6 /* ThemeCountModel.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
-		86764DA942978ED2346927BA /* SignInModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */; };
 		880F9DF6CE09FF752DAE740C /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */; };
 		8C77FD650CE1F6F136A40F76 /* ReactorKit in Frameworks */ = {isa = PBXBuildFile; productRef = FD998E7EB432C259C47421AB /* ReactorKit */; };
 		989F8E60271907C3692AB6F6 /* AppFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85477FFC6164F75CBA4021DB /* AppFlow.swift */; };
@@ -65,7 +63,6 @@
 		F2353E92853E03E0EFA03E29 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D08F3741D6118D193CE504 /* SnapKit */; };
 		F64DEA2F5E24FA1225BE4661 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11D79435020602010C42CBEB /* DailyViewController.swift */; };
 		F859A4B7480798F7FD030687 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AAA6655222829756C4F93636 /* SplashViewController.swift */; };
-		F9F33F448739DEEF2A3ACDE7 /* SignUpRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EAD3C55A85746D6534C6C1B /* SignUpRequest.swift */; };
 		FD02A98249778723FE6590C0 /* DailyNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 93ABA02284EDBF20957D6EA9 /* DailyNavigation.swift */; };
 		FF7B648B273A54AE1571F773 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 024962F4EB456C656CF7594E /* OnBoardingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -94,16 +91,13 @@
 		1FBA1ABED08AF315EBF6171B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		200F75688B95613F7DADEFB4 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
 		27C87EB4CF2AA3FD5E5A699E /* DailyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyShadow.swift; sourceTree = "<group>"; };
-		2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInModel.swift; sourceTree = "<group>"; };
 		2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
-		2ECCC8AB41484A93E0A9BF2C /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 		3118197F6E1AD10FB65EA918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		313A6E7D517BB97D5372BFDC /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		34B4F90512BF917D01E27818 /* Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4E661F6FA15FF35E308446CA /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		54F3517475D7D5BAE4F93FEF /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		587AC24D73A0FB2DFCCC61E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		5EAD3C55A85746D6534C6C1B /* SignUpRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpRequest.swift; sourceTree = "<group>"; };
 		63A6B3B0EB4AECC6B47618FC /* DailyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReactor.swift; sourceTree = "<group>"; };
 		691765455429189503736CAB /* TabBarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlow.swift; sourceTree = "<group>"; };
 		76F1E672207FEA280AA9C0F4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -241,7 +235,6 @@
 		3BB678426DCE0E9C9EE35FBA /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				2BCC34C4F3BF76344CCDCCEC /* SignInModel.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -309,8 +302,6 @@
 		58B5C6210A10A31FC541002A /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				2ECCC8AB41484A93E0A9BF2C /* SignInRequest.swift */,
-				5EAD3C55A85746D6534C6C1B /* SignUpRequest.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -783,10 +774,7 @@
 				51C543B22AD9756D0E2BBF2E /* SceneDelegate.swift in Sources */,
 				B07B5846C81EB0FCE7EAD133 /* DailyStep.swift in Sources */,
 				687D364044989AFA73626E77 /* BaseURL.swift in Sources */,
-				86764DA942978ED2346927BA /* SignInModel.swift in Sources */,
-				769381BCDCEC7B1BC3813E41 /* SignInRequest.swift in Sources */,
 				778F97FE2AA03B8900FED3E6 /* AccountServices.swift in Sources */,
-				F9F33F448739DEEF2A3ACDE7 /* SignUpRequest.swift in Sources */,
 				AE767DF37DCD34564B8C2789 /* AuthServices.swift in Sources */,
 				778F97FB2AA03B3700FED3E6 /* ChoiceThemeRequest.swift in Sources */,
 				7451C0F96296471111388C84 /* DailyButton.swift in Sources */,
