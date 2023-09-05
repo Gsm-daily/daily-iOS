@@ -2,7 +2,7 @@ import Foundation
 import Moya
 
 enum AuthServices {
-    
+    case signInWithApple(identityToken: String)
 }
 
 
@@ -13,13 +13,15 @@ extension AuthServices: TargetType {
     
     var path: String {
         switch self {
-            
+        case let .signInWithApple(identityToken):
+            return "/auth/signin/apple/\(identityToken)"
         }
     }
     
     var method: Moya.Method {
         switch self {
-            
+        case .signInWithApple:
+            return .post
         }
     }
     
@@ -29,7 +31,8 @@ extension AuthServices: TargetType {
     
     var task: Task {
         switch self {
-        
+        case .signInWithApple:
+            return .requestPlain
         }
     }
     
