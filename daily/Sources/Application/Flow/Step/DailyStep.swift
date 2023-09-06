@@ -31,4 +31,7 @@ enum DailyStep: Step {
     
     // MARK: Main
     case homeIsRequired
+    
+    case alert(title: String?, message: String?, style: UIAlertController.Style, actions: [UIAlertAction])
+    case failureAlert(title: String?, message: String?, action: [UIAlertAction] = [])
 }
