@@ -111,6 +111,11 @@ extension OnBoardingReactor: ASAuthorizationControllerDelegate {
         controller: ASAuthorizationController,
         didCompleteWithError error: Error
     ) {
-        
+        self.steps.accept(
+            DailyStep.failureAlert(
+                title: "오류",
+                message: "로그인에 실패했습니다. 나중에 다시 시도해주세요!"
+            )
+        )
     }
 }
