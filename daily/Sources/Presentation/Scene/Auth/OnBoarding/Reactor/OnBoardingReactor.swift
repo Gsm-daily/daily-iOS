@@ -4,6 +4,7 @@ import RxCocoa
 import RxSwift
 import ReactorKit
 import AuthenticationServices
+import Moya
 
 class OnBoardingReactor: NSObject, Reactor, Stepper{
     // MARK: - Properties
@@ -12,6 +13,10 @@ class OnBoardingReactor: NSObject, Reactor, Stepper{
     
     var steps: PublishRelay<Step> = .init()
     
+    let provider = MoyaProvider<AuthServices>(plugins: [NetworkLoggerPlugin()])
+    
+    var authData: SignInWithAppleResponse?
+        
     // MARK: - Reactor
     
     enum Action {
@@ -57,5 +62,55 @@ private extension OnBoardingReactor {
 }
 
 extension OnBoardingReactor: ASAuthorizationControllerDelegate {
+    // 애플 로그인 성공
+    func authorizationController(
+        controller: ASAuthorizationController,
+        didCompleteWithAuthorization authorization: ASAuthorization
+    ) {
+        if let appleIDCredential = authorization.credential as? ASAuthorizationAppleIDCredential {
+            
+            guard let identityToken = String(
+                data: appleIDCredential.identityToken!,
+                encoding: .utf8
+            ) else {return}
+            
+            provider.request(
+                .signInWithApple(
+                    identityToken: identityToken
+                )
+            ) { response in
+                switch response {
+                case let .success(result):
+                    let responseData = result.data
+                    do {
+                        self.authData = try JSONDecoder().decode(
+                            SignInWithAppleResponse.self,
+                            from: responseData
+                        )
+                    }catch(let err) {
+                        print(String(describing: err))
+                    }
+                    let statusCode = result.statusCode
+                    switch statusCode{
+                    case 200..<300:
+                        self.steps.accept(DailyStep.tabBarIsRequired)
+                    case 401:
+                        print("ERROR")
+                    default:
+                        print("ERROR")
+                    }
+                case .failure(let err):
+                    print(String(describing: err))
+                }
+            }
+        }
+    }
     
+    // 애플 로그인 실패
+    func authorizationController(
+        controller: ASAuthorizationController,
+        didCompleteWithError error: Error
+    ) {
+        print("Apple Sign In Error: \(error.localizedDescription)")
+    }
 }
