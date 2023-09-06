@@ -111,6 +111,6 @@ extension OnBoardingReactor: ASAuthorizationControllerDelegate {
         controller: ASAuthorizationController,
         didCompleteWithError error: Error
     ) {
-        print("Apple Sign In Error: \(error.localizedDescription)")
+        
     }
 }
