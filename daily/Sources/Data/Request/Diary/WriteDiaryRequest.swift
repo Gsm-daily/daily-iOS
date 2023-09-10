@@ -1,6 +1,6 @@
 import Foundation
 
-struct DiaryRequest: Codable {
+struct WriteDiaryRequest: Codable {
     let content: String
     let date: String
     
