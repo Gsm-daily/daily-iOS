@@ -17,10 +17,12 @@ final class DiaryReactor: Reactor, Stepper {
     
     lazy var accessToken = "Bearer " + (keychain.read(key: Const.KeychainKey.accessToken) ?? "")
     
+    var date: String = ""
+    
     // MARK: - Reactor
     
     enum Action {
-        case saveDiaryButtonDidTap(content: String, date: String)
+        case saveDiaryButtonDidTap(content: String)
     }
     
     enum Mutation {
@@ -32,8 +34,9 @@ final class DiaryReactor: Reactor, Stepper {
     }
     
     // MARK: - Init
-    init() {
+    init(date: String) {
         self.initialState = State()
+        self.date = date
     }
 }
 
@@ -41,24 +44,25 @@ final class DiaryReactor: Reactor, Stepper {
 extension DiaryReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case let .saveDiaryButtonDidTap(content, date):
-            return saveDiaryButtonDidTap(content: content, date: date)
+        case let .saveDiaryButtonDidTap(content):
+            return saveDiaryButtonDidTap(content: content)
         }
     }
 }
 
 // MARK: - Method
 private extension DiaryReactor {
-    func saveDiaryButtonDidTap(content: String, date: String) -> Observable<Mutation> {
+    func saveDiaryButtonDidTap(content: String) -> Observable<Mutation> {
         return Observable.create { observer in
-            let param = WriteDiaryRequest(content: content, date: date)
+            let param = WriteDiaryRequest(content: content, date: self.date)
+            print(param)
             self.provider.request(.writeDiary(param: param, authorization: self.accessToken)) { result in
                 switch result {
                 case let .success(res):
                     let statusCode = res.statusCode
                     switch statusCode{
                     case 200..<300:
-                        self.steps.accept(DailyStep.homeIsRequired)
+                        self.steps.accept(DailyStep.diaryIsDismiss)
                     case 401:
                         self.steps.accept(
                             DailyStep.failureAlert(

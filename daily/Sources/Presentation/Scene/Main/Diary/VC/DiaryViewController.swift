@@ -74,8 +74,7 @@ class DiaryViewController: BaseViewController<DiaryReactor>, UITextViewDelegate{
     override func bindAction(reactor: DiaryReactor) {
         navigationItem.rightBarButtonItem?.rx.tap
             .map { DiaryReactor.Action.saveDiaryButtonDidTap(
-                content: self.dailyTextView.text,
-                date: self.navigationItem.backButtonTitle ?? ""
+                content: self.dailyTextView.text
             )}
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
