@@ -75,5 +75,16 @@ class DailyViewController: BaseViewController<DailyReactor>, UITextViewDelegate{
             $0.bottom.equalTo(view.snp.bottom).inset(24)
         }
     }
-
+    
+    // MARK: - Reactor
+    
+    override func bindAction(reactor: DailyReactor) {
+        navigationItem.rightBarButtonItem?.rx.tap
+            .map { DailyReactor.Action.saveDiaryButtonDidTap(
+                content: dailyTextView.text,
+                date: navigationItem.backButtonTitle ?? ""
+            )}
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 }
