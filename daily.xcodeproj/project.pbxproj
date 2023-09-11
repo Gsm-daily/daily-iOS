@@ -32,6 +32,7 @@
 		6FAED19DB17CC8A580DDAB18 /* SelectThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051FBF71347C271B5208C08 /* SelectThemeCell.swift */; };
 		761B5290D02DFB391BF44F6D /* DiaryReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801692C7B4E6AD8DB593991A /* DiaryReactor.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
+		774583222AAED73700A7DA0B /* AccountSetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */; };
 		775B90D7A88E41AE0B8CCC5A /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E6EE1B67593190AA2EFC9 /* DailyShadow.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
@@ -107,6 +108,7 @@
 		7613E67DB841A75A4075F4CF /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleModel.swift; sourceTree = "<group>"; };
 		774583202AAEAC5D00A7DA0B /* Daily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Daily.entitlements; path = Daily/Daily.entitlements; sourceTree = "<group>"; };
+		774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountSetInfoModel.swift; path = daily/Sources/Data/Model/Account/AccountSetInfoModel.swift; sourceTree = SOURCE_ROOT; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		801692C7B4E6AD8DB593991A /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
@@ -523,6 +525,7 @@
 			isa = PBXGroup;
 			children = (
 				BFCB5F8F4115B208C9DF6641 /* ThemeCountModel.swift */,
+				774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -786,6 +789,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				774583222AAED73700A7DA0B /* AccountSetInfoModel.swift in Sources */,
 				A724FB31F26D80030ADA7A57 /* AppDelegate.swift in Sources */,
 				989F8E60271907C3692AB6F6 /* AppFlow.swift in Sources */,
 				842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */,
