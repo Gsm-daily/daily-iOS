@@ -9,6 +9,8 @@ import Moya
 class OnBoardingReactor: NSObject, Reactor, Stepper{
     // MARK: - Properties
     
+    let keychain = Keychain()
+    
     var initialState: State
     
     var steps: PublishRelay<Step> = .init()
@@ -93,6 +95,7 @@ extension OnBoardingReactor: ASAuthorizationControllerDelegate {
                     let statusCode = result.statusCode
                     switch statusCode{
                     case 200..<300:
+                        self.addKeychainToken()
                         self.steps.accept(DailyStep.tabBarIsRequired)
                     case 401:
                         print("ERROR")
@@ -116,6 +119,17 @@ extension OnBoardingReactor: ASAuthorizationControllerDelegate {
                 title: "오류",
                 message: "로그인에 실패했습니다. 나중에 다시 시도해주세요!"
             )
+        )
+    }
+    
+    func addKeychainToken() {
+        self.keychain.create(
+            key: Const.KeychainKey.accessToken,
+            token: self.authData?.accessToken ?? ""
+        )
+        self.keychain.create(
+            key: Const.KeychainKey.refreshToken,
+            token: self.authData?.refreshToken ?? ""
         )
     }
 }

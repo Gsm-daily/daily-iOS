@@ -33,6 +33,7 @@
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
 		774583192AAD88C200A7DA0B /* WriteDiaryRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774583182AAD88C200A7DA0B /* WriteDiaryRequest.swift */; };
 		7745831C2AAD891F00A7DA0B /* DiaryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745831B2AAD891F00A7DA0B /* DiaryServices.swift */; };
+		7745831E2AAE8F1500A7DA0B /* DailyKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7745831D2AAE8F1500A7DA0B /* DailyKeychain.swift */; };
 		775B90D7A88E41AE0B8CCC5A /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E6EE1B67593190AA2EFC9 /* DailyShadow.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
@@ -107,6 +108,7 @@
 		76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleModel.swift; sourceTree = "<group>"; };
 		774583182AAD88C200A7DA0B /* WriteDiaryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WriteDiaryRequest.swift; path = daily/Sources/Data/Request/Diary/WriteDiaryRequest.swift; sourceTree = SOURCE_ROOT; };
 		7745831B2AAD891F00A7DA0B /* DiaryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DiaryServices.swift; path = daily/Sources/Data/Services/Diary/DiaryServices.swift; sourceTree = SOURCE_ROOT; };
+		7745831D2AAE8F1500A7DA0B /* DailyKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DailyKeychain.swift; path = daily/Sources/Presentation/Utils/Extension/DailyKeychain.swift; sourceTree = SOURCE_ROOT; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		84EF7EF34450A3B39DDAD783 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServices.swift; sourceTree = "<group>"; };
@@ -224,6 +226,7 @@
 				4AA1BE3F3C3FBCE308D3C4DB /* DailyNavigation.swift */,
 				159E6EE1B67593190AA2EFC9 /* DailyShadow.swift */,
 				03C36085B09A07286B92865E /* TextField.swift */,
+				7745831D2AAE8F1500A7DA0B /* DailyKeychain.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -810,6 +813,7 @@
 				3BF2AAD07EEABD1EF67DEBC5 /* DailyViewController.swift in Sources */,
 				DC63607FA6387854D56C49E8 /* HomeReactor.swift in Sources */,
 				E32E6BD16E2E443806A7877C /* HomeViewController.swift in Sources */,
+				7745831E2AAE8F1500A7DA0B /* DailyKeychain.swift in Sources */,
 				C3B145050924810F0BCDEEF9 /* ProfileCollectionCell.swift in Sources */,
 				1C671F513A7CAB6507960D41 /* ProfileViewModel.swift in Sources */,
 				A65FCD0B212AFC0BF70AA0B0 /* ProfileViewController.swift in Sources */,
