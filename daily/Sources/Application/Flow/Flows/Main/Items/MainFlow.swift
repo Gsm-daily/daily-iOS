@@ -41,8 +41,8 @@ class HomeFlow: Flow {
         case .onBoardingIsRequired:
             return .end(forwardToParentFlowWithStep: DailyStep.onBoardingIsRequired)
             
-        case .dailyIsRequired:
-            return coordinateToDaily()
+        case .diaryIsRequired:
+            return coordinateToDiary()
             
         case .homeIsRequired:
             return coordinateToHome()
@@ -58,9 +58,9 @@ class HomeFlow: Flow {
         }
     }
     
-    private func coordinateToDaily() -> FlowContributors {
-        let vm = DailyReactor()
-        let vc = DailyViewController(vm)
+    private func coordinateToDiary() -> FlowContributors {
+        let vm = DiaryReactor()
+        let vc = DiaryViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
     }

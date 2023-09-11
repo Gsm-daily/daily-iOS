@@ -19,7 +19,7 @@
 		2EED616CF9380AEBA12344ED /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = 7B980D196817B225807FC212 /* Gifu */; };
 		3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849385038CC481A806C8791 /* ThemeRequest.swift */; };
 		340D590100F51E55ACE1A938 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C5ADB10F27E9FD7451C4D /* SplashViewController.swift */; };
-		3BF2AAD07EEABD1EF67DEBC5 /* DailyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33667394D60D680BB581B90 /* DailyViewController.swift */; };
+		3BF2AAD07EEABD1EF67DEBC5 /* DiaryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C33667394D60D680BB581B90 /* DiaryViewController.swift */; };
 		3F94CEFBD2B923E3F9D9B367 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36085B09A07286B92865E /* TextField.swift */; };
 		41DC51C5016C0264164861F8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CCA2674189205F22F07061 /* OnBoardingViewController.swift */; };
 		42014340486942BB4AAA6E6D /* SelectThemeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBC73FBF62BA7B7F9C0B20 /* SelectThemeReactor.swift */; };
@@ -59,7 +59,7 @@
 		C993B6C8FA9E8239ED72639B /* DailyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE542FC0C3C3AD32AFCAED /* DailyColor.swift */; };
 		C9B81DB2365837538F44D14A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 51B01435703480FC39DE3E9C /* FSCalendar */; };
 		CB474453BC1FA453AD063427 /* SignInWithAppleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */; };
-		D2F5A87566CDC5E6B9DFAEB1 /* DailyReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42723CBA29D3BC10DA5153FE /* DailyReactor.swift */; };
+		D2F5A87566CDC5E6B9DFAEB1 /* DiaryReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42723CBA29D3BC10DA5153FE /* DiaryReactor.swift */; };
 		DC63607FA6387854D56C49E8 /* HomeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A60FCC1A211C55CE1AAF3D /* HomeReactor.swift */; };
 		E32E6BD16E2E443806A7877C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC6DC6367E4933A486E223 /* HomeViewController.swift */; };
 		E579EE831A3B930382FCEE8A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D11761700097E8119C86D39D /* RxCocoa */; };
@@ -97,7 +97,7 @@
 		34B4F90512BF917D01E27818 /* Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		372508B85DA90671607AA311 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
 		3A69B6776C444F00063BC00D /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
-		42723CBA29D3BC10DA5153FE /* DailyReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyReactor.swift; sourceTree = "<group>"; };
+		42723CBA29D3BC10DA5153FE /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
 		4AA1BE3F3C3FBCE308D3C4DB /* DailyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNavigation.swift; sourceTree = "<group>"; };
 		517485ECF222E05856BC39DC /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		52B72D0F483C6710F23AB70B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		B1FDE16182F588DC05C7FCBB /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		BFCB5F8F4115B208C9DF6641 /* ThemeCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCountModel.swift; sourceTree = "<group>"; };
 		C1B1573ED04078586896C692 /* ChoiceThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceThemeRequest.swift; sourceTree = "<group>"; };
-		C33667394D60D680BB581B90 /* DailyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyViewController.swift; sourceTree = "<group>"; };
+		C33667394D60D680BB581B90 /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		C7141189190E3E980525F57F /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		CA72DF96186CC09B8B01171B /* DailyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTextField.swift; sourceTree = "<group>"; };
 		D051FBF71347C271B5208C08 /* SelectThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeCell.swift; sourceTree = "<group>"; };
@@ -252,7 +252,7 @@
 		1CEC7304B274770CD27C4030 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				C33667394D60D680BB581B90 /* DailyViewController.swift */,
+				C33667394D60D680BB581B90 /* DiaryViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -481,7 +481,7 @@
 		9EA093182FE05B24D6BBAF35 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				ADE1554DD75258FB5378CFB8 /* Daily */,
+				ADE1554DD75258FB5378CFB8 /* Diary */,
 				39C19B34191310C59C1F3EB3 /* Home */,
 				009304C287E8940E86181DEF /* Profile */,
 				E926012757B5B392A0E23BB4 /* TabBar */,
@@ -500,13 +500,13 @@
 			path = Daily;
 			sourceTree = "<group>";
 		};
-		ADE1554DD75258FB5378CFB8 /* Daily */ = {
+		ADE1554DD75258FB5378CFB8 /* Diary */ = {
 			isa = PBXGroup;
 			children = (
 				FE1F5C13EF44F9F3846F9946 /* Reactor */,
 				1CEC7304B274770CD27C4030 /* VC */,
 			);
-			path = Daily;
+			path = Diary;
 			sourceTree = "<group>";
 		};
 		B93FEC9B7E07899A92846908 /* Products */ = {
@@ -687,7 +687,7 @@
 		FE1F5C13EF44F9F3846F9946 /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				42723CBA29D3BC10DA5153FE /* DailyReactor.swift */,
+				42723CBA29D3BC10DA5153FE /* DiaryReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -809,8 +809,8 @@
 				42014340486942BB4AAA6E6D /* SelectThemeReactor.swift in Sources */,
 				EAFFFF89A05442D0A9FB55CD /* CarouselView.swift in Sources */,
 				EC9269C6F36A1561D1A7C011 /* SeletThemeViewController.swift in Sources */,
-				D2F5A87566CDC5E6B9DFAEB1 /* DailyReactor.swift in Sources */,
-				3BF2AAD07EEABD1EF67DEBC5 /* DailyViewController.swift in Sources */,
+				D2F5A87566CDC5E6B9DFAEB1 /* DiaryReactor.swift in Sources */,
+				3BF2AAD07EEABD1EF67DEBC5 /* DiaryViewController.swift in Sources */,
 				DC63607FA6387854D56C49E8 /* HomeReactor.swift in Sources */,
 				E32E6BD16E2E443806A7877C /* HomeViewController.swift in Sources */,
 				7745831E2AAE8F1500A7DA0B /* DailyKeychain.swift in Sources */,

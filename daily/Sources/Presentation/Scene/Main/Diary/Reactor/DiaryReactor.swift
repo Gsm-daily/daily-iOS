@@ -5,7 +5,7 @@ import RxFlow
 import ReactorKit
 import Moya
 
-final class DailyReactor: Reactor, Stepper {
+final class DiaryReactor: Reactor, Stepper {
     // MARK: - Properties
     var initialState: State
     
@@ -38,7 +38,7 @@ final class DailyReactor: Reactor, Stepper {
 }
 
 // MARK: - Mutate
-extension DailyReactor {
+extension DiaryReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
         case let .saveDiaryButtonDidTap(content, date):
@@ -48,7 +48,7 @@ extension DailyReactor {
 }
 
 // MARK: - Method
-private extension DailyReactor {
+private extension DiaryReactor {
     func saveDiaryButtonDidTap(content: String, date: String) -> Observable<Mutation> {
         return Observable.create { observer in
             let param = WriteDiaryRequest(content: content, date: date)
