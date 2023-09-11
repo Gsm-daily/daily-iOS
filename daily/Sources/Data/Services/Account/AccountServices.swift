@@ -2,9 +2,9 @@ import Foundation
 import Moya
 
 enum AccountServices {
-    case choiceTheme(param: ChoiceThemeRequest, authorization: String)
     case theme(authorization: String)
     case themeCount(theme: String, authorization: String)
+    case accountSetInfo(authorization: String, param: AccountSetInfoRequest)
 }
 
 
@@ -15,10 +15,12 @@ extension AccountServices: TargetType {
     
     var path: String {
         switch self {
-        case .choiceTheme:
-            return "/account/choice-theme"
+        case .accountSetInfo:
+            return "/account/info"
+            
         case .theme:
             return "/account/theme"
+            
         case .themeCount:
             return "/account/theme-count"
         }
@@ -26,8 +28,9 @@ extension AccountServices: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .choiceTheme:
+        case .accountSetInfo:
             return .post
+            
         case .theme, .themeCount:
             return .get
         }
@@ -39,22 +42,25 @@ extension AccountServices: TargetType {
     
     var task: Task {
         switch self {
-        case let .choiceTheme(param, _):
+        case let .accountSetInfo(_,param):
             return .requestJSONEncodable(param)
+            
         case .theme:
             return .requestPlain
+            
         case let .themeCount(theme,_):
             return .requestParameters(
                 parameters: ["theme" : theme],
                 encoding: URLEncoding.queryString
             )
+            
         }
     }
     
     var headers: [String : String]? {
         switch self {
-        case let .choiceTheme(_,authorization), let .theme(authorization),
-            let .themeCount(_, authorization):
+        case let .theme(authorization),
+            let .themeCount(_, authorization), let .accountSetInfo(authorization,_):
             return ["Content-Type" :"application/json", "Authorization": authorization]
         default:
             return["Content-Type" :"application/json"]
