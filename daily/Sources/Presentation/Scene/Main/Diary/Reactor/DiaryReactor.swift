@@ -62,7 +62,18 @@ private extension DiaryReactor {
                     let statusCode = res.statusCode
                     switch statusCode{
                     case 200..<300:
-                        self.steps.accept(DailyStep.diaryIsDismiss)
+                        self.steps.accept(
+                            DailyStep.alert(
+                                title: "완료",
+                                message: "일기 작성이 완료되었습니다.",
+                                style: .alert,
+                                actions: [
+                                    .init(title: "확인", style: .default) {_ in
+                                        self.steps.accept(DailyStep.diaryIsDismiss)
+                                    }
+                                ]
+                            )
+                        )
                     case 401:
                         self.steps.accept(
                             DailyStep.failureAlert(
