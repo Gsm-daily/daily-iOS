@@ -10,7 +10,6 @@
 		0340C91C2259FB5C2DC28209 /* RxFlow in Frameworks */ = {isa = PBXBuildFile; productRef = 9AE731B5115163D71F930804 /* RxFlow */; };
 		04DE32C746A197AEB7877C3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8324D0DB7103DB159732C0D7 /* LaunchScreen.storyboard */; };
 		10DA4DE16AD7091C2FD6B00B /* DailyCalender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723C41F93E033BFAABCAB01E /* DailyCalender.swift */; };
-		12B50F16246ED1737C807036 /* ChoiceThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1B1573ED04078586896C692 /* ChoiceThemeRequest.swift */; };
 		12D12D45A29ACEC07E085197 /* MainFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1FDE16182F588DC05C7FCBB /* MainFlow.swift */; };
 		1C4177A7E549AA8BE5E40864 /* ViewAnimator in Frameworks */ = {isa = PBXBuildFile; productRef = A55F0EF0AE24D58962844ED8 /* ViewAnimator */; };
 		1C671F513A7CAB6507960D41 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372508B85DA90671607AA311 /* ProfileViewModel.swift */; };
@@ -108,7 +107,7 @@
 		7613E67DB841A75A4075F4CF /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleModel.swift; sourceTree = "<group>"; };
 		774583202AAEAC5D00A7DA0B /* Daily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Daily.entitlements; path = Daily/Daily.entitlements; sourceTree = "<group>"; };
-		774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountSetInfoModel.swift; path = daily/Sources/Data/Model/Account/AccountSetInfoModel.swift; sourceTree = SOURCE_ROOT; };
+		774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountSetInfoModel.swift; path = Daily/Sources/Data/Request/Account/AccountSetInfoModel.swift; sourceTree = SOURCE_ROOT; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		801692C7B4E6AD8DB593991A /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
@@ -126,7 +125,6 @@
 		B033F59AE037C8A84FBDC915 /* DailyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyButton.swift; sourceTree = "<group>"; };
 		B1FDE16182F588DC05C7FCBB /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		BFCB5F8F4115B208C9DF6641 /* ThemeCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCountModel.swift; sourceTree = "<group>"; };
-		C1B1573ED04078586896C692 /* ChoiceThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceThemeRequest.swift; sourceTree = "<group>"; };
 		C6E886E3B0D097D503F8D46C /* DiaryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryServices.swift; sourceTree = "<group>"; };
 		C7141189190E3E980525F57F /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		CA72DF96186CC09B8B01171B /* DailyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTextField.swift; sourceTree = "<group>"; };
@@ -525,7 +523,6 @@
 			isa = PBXGroup;
 			children = (
 				BFCB5F8F4115B208C9DF6641 /* ThemeCountModel.swift */,
-				774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -533,7 +530,7 @@
 		BC47CB3EE098C5D66B2A40EB /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				C1B1573ED04078586896C692 /* ChoiceThemeRequest.swift */,
+				774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */,
 				D849385038CC481A806C8791 /* ThemeRequest.swift */,
 			);
 			path = Account;
@@ -802,7 +799,6 @@
 				687D364044989AFA73626E77 /* BaseURL.swift in Sources */,
 				BEA1C7183C42C34574E46D95 /* ThemeCountModel.swift in Sources */,
 				CB474453BC1FA453AD063427 /* SignInWithAppleModel.swift in Sources */,
-				12B50F16246ED1737C807036 /* ChoiceThemeRequest.swift in Sources */,
 				3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */,
 				1E546479FE8369BF32FDF0F3 /* WriteDiaryRequest.swift in Sources */,
 				AF5A38F0A233372013DB1F11 /* AccountServices.swift in Sources */,
