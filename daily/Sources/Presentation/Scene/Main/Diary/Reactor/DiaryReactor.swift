@@ -74,18 +74,60 @@ private extension DiaryReactor {
                                 ]
                             )
                         )
+                    case 400:
+                        self.steps.accept(
+                            DailyStep.alert(
+                                title: "오류",
+                                message: "미래의 일기는 작성할 수 없습니다.",
+                                style: .alert,
+                                actions: [
+                                    .init(title: "확인", style: .default) {_ in
+                                        self.steps.accept(DailyStep.diaryIsDismiss)
+                                    }
+                                ]
+                            )
+                        )
                     case 401:
                         self.steps.accept(
                             DailyStep.failureAlert(
                                 title: "오류",
-                                message: "작업을 다시 시도해주세요"
+                                message: "다시 한 번 작업을 시도해주세요"
+                            )
+                        )
+                    case 404:
+                        self.steps.accept(
+                            DailyStep.alert(
+                                title: "오류",
+                                message: "게정을 찾을 수 없습니다.",
+                                style: .alert,
+                                actions: [
+                                    .init(title: "확인", style: .default) {_ in
+                                        self.steps.accept(DailyStep.onBoardingIsRequired)
+                                    }
+                                ]
                             )
                         )
                     default:
-                        print("ERROR")
+                        self.steps.accept(
+                            DailyStep.alert(
+                                title: "오류",
+                                message: "알 수 없는 오류가 발생했습니다.",
+                                style: .alert,
+                                actions: [
+                                    .init(title: "확인", style: .default) {_ in
+                                        self.steps.accept(DailyStep.onBoardingIsRequired)
+                                    }
+                                ]
+                            )
+                        )
                     }
                 case let .failure(err):
-                    observer.onError(err)
+                    self.steps.accept(
+                        DailyStep.failureAlert(
+                            title: "오류",
+                            message: "네트워크 연결상태를 확인해주세요"
+                        )
+                    )
                 }
             }
             return Disposables.create()
