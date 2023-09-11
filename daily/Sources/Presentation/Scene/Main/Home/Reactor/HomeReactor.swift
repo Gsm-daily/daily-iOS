@@ -40,6 +40,6 @@ extension HomeReactor {
 // MARK: - Method
 extension HomeReactor {
     func pushDailyVC() {
-        self.steps.accept(DailyStep.dailyIsRequired)
+        self.steps.accept(DailyStep.diaryIsRequired)
     }
 }

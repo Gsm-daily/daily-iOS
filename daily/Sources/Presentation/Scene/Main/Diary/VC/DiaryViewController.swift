@@ -1,17 +1,10 @@
-//
-//  DailyViewController.swift
-//  daily
-//
-//  Created by 선민재 on 2022/11/18.
-//
-
 import UIKit
 import SnapKit
 import Then
 import RxCocoa
 import RxSwift
 
-class DailyViewController: BaseViewController<DailyReactor>, UITextViewDelegate{
+class DiaryViewController: BaseViewController<DiaryReactor>, UITextViewDelegate{
 
     override func viewDidLoad() {
         self.tabBarController?.tabBar.isHidden = true
@@ -78,9 +71,9 @@ class DailyViewController: BaseViewController<DailyReactor>, UITextViewDelegate{
     
     // MARK: - Reactor
     
-    override func bindAction(reactor: DailyReactor) {
+    override func bindAction(reactor: DiaryReactor) {
         navigationItem.rightBarButtonItem?.rx.tap
-            .map { DailyReactor.Action.saveDiaryButtonDidTap(
+            .map { [self] in DiaryReactor.Action.saveDiaryButtonDidTap(
                 content: dailyTextView.text,
                 date: navigationItem.backButtonTitle ?? ""
             )}
