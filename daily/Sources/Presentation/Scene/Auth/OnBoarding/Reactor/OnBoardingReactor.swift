@@ -95,6 +95,7 @@ extension OnBoardingReactor: ASAuthorizationControllerDelegate {
                     let statusCode = result.statusCode
                     switch statusCode{
                     case 200..<300:
+                        print(self.authData)
                         self.addKeychainToken()
                         self.steps.accept(DailyStep.tabBarIsRequired)
                     case 401:
