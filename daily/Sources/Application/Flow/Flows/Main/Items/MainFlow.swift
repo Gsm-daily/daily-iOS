@@ -41,11 +41,14 @@ class HomeFlow: Flow {
         case .onBoardingIsRequired:
             return .end(forwardToParentFlowWithStep: DailyStep.onBoardingIsRequired)
             
-        case .diaryIsRequired:
-            return coordinateToDiary()
+        case let .diaryIsRequired(date):
+            return coordinateToDiary(date: date)
             
         case .homeIsRequired:
             return coordinateToHome()
+            
+        case .diaryIsDismiss:
+            return diaryIsDismiss()
             
         case let .failureAlert(title, message, action):
             return presentToFailureAlert(title: title, message: message, action: action)
@@ -58,8 +61,15 @@ class HomeFlow: Flow {
         }
     }
     
-    private func coordinateToDiary() -> FlowContributors {
-        let vm = DiaryReactor()
+    private func diaryIsDismiss() -> FlowContributors {
+        let vm = DiaryReactor(date: "")
+        let vc = DiaryViewController(vm)
+        self.rootViewController.popViewController(animated: true)
+        return .none
+    }
+    
+    private func coordinateToDiary(date: String) -> FlowContributors {
+        let vm = DiaryReactor(date: date)
         let vc = DiaryViewController(vm)
         self.rootViewController.pushViewController(vc, animated: true)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))

@@ -14,8 +14,10 @@ extension HomeViewController: FSCalendarDelegate, FSCalendarDataSource, FSCalend
         let dateFormatter = DateFormatter()
 //        var didSelectDate = dateFormatter.string(from: date)
         dateFormatter.dateFormat = "yyyy년 MM월 dd일"
+        let diaryDateFormatter = DateFormatter()
+        diaryDateFormatter.dateFormat = "yyyy-MM-dd"
         print(dateFormatter.string(from: date))
         self.navigationItem.backButton(title: dateFormatter.string(from: date))
-        self.reactor.pushDailyVC()
+        self.reactor.pushDailyVC(date: diaryDateFormatter.string(from: date))
     }
 }
