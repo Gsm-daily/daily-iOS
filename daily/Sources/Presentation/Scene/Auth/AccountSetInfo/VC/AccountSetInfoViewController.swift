@@ -42,6 +42,8 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
         )
         $0.layer.cornerRadius = 20
     }
+    
+    private var completeButton = DailyButton(text: "완료")
 
     override func addView() {
         [
@@ -49,7 +51,8 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
             nickNameTextField,
             selectThemeText,
             grassLandThemeButton,
-            oceanThemeButton
+            oceanThemeButton,
+            completeButton
         ].forEach {
             view.addSubview($0)
         }
@@ -80,6 +83,11 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
             $0.trailing.equalTo(view.snp.trailing).inset(20)
             $0.width.equalTo((bounds.width) / 2.5)
             $0.height.equalTo(70)
+        }
+        completeButton.snp.makeConstraints {
+            $0.bottom.equalTo(view.snp.bottom).inset(58)
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.height.equalTo(60)
         }
     }
 }
