@@ -95,7 +95,7 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
     
     override func bindView(reactor: AccountSetInfoReactor) {
         completeButton.rx.tap
-            .map { AccountSetInfoReactor.Action.completeButtonDidtap(name: self.nickNameTextField.text ?? "", theme: "GRASSLAND") }
+            .map { AccountSetInfoReactor.Action.completeButtonDidTap(name: self.nickNameTextField.text ?? "") }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
     }

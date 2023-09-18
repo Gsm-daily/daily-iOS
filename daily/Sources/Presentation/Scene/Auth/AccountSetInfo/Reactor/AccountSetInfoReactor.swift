@@ -17,18 +17,22 @@ class AccountSetInfoReactor: Reactor, Stepper {
     
     lazy var accessToken = "Bearer " + (keychain.read(key: Const.KeychainKey.accessToken) ?? "")
     
+    var theme: String = ""
+    
     // MARK: - Reactor
     
     enum Action {
-        case completeButtonDidtap(name: String, theme: String)
+        case completeButtonDidTap(name: String)
+        case grassLandButtonDidTap
+        case oceanButtonDidTap
     }
     
     enum Mutation {
-        
+        case setTheme(String)
     }
     
     struct State {
-        
+        var theme: String = ""
     }
     
     // MARK: - Init
@@ -41,17 +45,35 @@ class AccountSetInfoReactor: Reactor, Stepper {
 extension AccountSetInfoReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
-        case let .completeButtonDidtap(name,theme):
-            return completeButtonDidtap(name: name, theme: theme)
+        case let .completeButtonDidTap(name):
+            return completeButtonDidTap(name: name)
+        case .grassLandButtonDidTap:
+            return .just(.setTheme("GRASSLAND"))
+        case .oceanButtonDidTap:
+            return .just(.setTheme("OCEAN"))
+            
         }
+    }
+}
+
+extension AccountSetInfoReactor {
+    func reduce(state: State, mutation: Mutation) -> State {
+        var newState = state
+
+        switch mutation {
+        case let .setTheme(theme):
+            self.theme = theme
+        }
+
+        return newState
     }
 }
 
 // MARK: - Method
 private extension AccountSetInfoReactor {
-    func completeButtonDidtap(name: String, theme: String) -> Observable<Mutation> {
+    func completeButtonDidTap(name: String) -> Observable<Mutation> {
         return Observable.create { observer in
-            let param = AccountSetInfoRequest(name: name, theme: theme)
+            let param = AccountSetInfoRequest(name: name, theme: self.theme)
             print(param)
             self.provider.request(.accountSetInfo(authorization: self.accessToken, param: param)) { result in
                 switch result {
