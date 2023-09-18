@@ -90,4 +90,13 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
             $0.height.equalTo(60)
         }
     }
+    
+    //MARK: - Reactor
+    
+    override func bindView(reactor: AccountSetInfoReactor) {
+        completeButton.rx.tap
+            .map { AccountSetInfoReactor.Action.completeButtonDidtap(name: self.nickNameTextField.text ?? "", theme: "GRASSLAND") }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
 }
