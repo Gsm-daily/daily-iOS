@@ -19,19 +19,19 @@
 		2EED616CF9380AEBA12344ED /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = 7B980D196817B225807FC212 /* Gifu */; };
 		3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849385038CC481A806C8791 /* ThemeRequest.swift */; };
 		340D590100F51E55ACE1A938 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C5ADB10F27E9FD7451C4D /* SplashViewController.swift */; };
+		3F21E725455D66C8A70347E0 /* EnterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C6984454A038B0F1D3206 /* EnterInfoViewController.swift */; };
 		3F94CEFBD2B923E3F9D9B367 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36085B09A07286B92865E /* TextField.swift */; };
 		41DC51C5016C0264164861F8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CCA2674189205F22F07061 /* OnBoardingViewController.swift */; };
-		42014340486942BB4AAA6E6D /* SelectThemeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 92CBC73FBF62BA7B7F9C0B20 /* SelectThemeReactor.swift */; };
 		458D173786CA86E9809E5301 /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = C7591A3CDDC1B7C10E1645F1 /* DPOTPView */; };
 		4797DBC2FDBB7794AC8ABF7C /* OnBoardingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69B6776C444F00063BC00D /* OnBoardingReactor.swift */; };
+		493DB288940131C4ED5999AE /* EnterInfoReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C281E1564C462B6C8C9BD /* EnterInfoReactor.swift */; };
 		4A6BC1D80EB9D1514254CEC5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0E7E4FD34A5E2006417002 /* Moya */; };
 		4BCE8D0B8C9D760E1A32DAC6 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE2BFB6B1FFC4DD59F77760 /* Then */; };
+		4C5C3111F288142A6E906116 /* AccountSetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905E35A11FD053379F4441D /* AccountSetInfoModel.swift */; };
 		51C543B22AD9756D0E2BBF2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */; };
 		687D364044989AFA73626E77 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCC0B9AC77F3B3797D6C85 /* BaseURL.swift */; };
-		6FAED19DB17CC8A580DDAB18 /* SelectThemeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D051FBF71347C271B5208C08 /* SelectThemeCell.swift */; };
 		761B5290D02DFB391BF44F6D /* DiaryReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801692C7B4E6AD8DB593991A /* DiaryReactor.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
-		774583222AAED73700A7DA0B /* AccountSetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */; };
 		775B90D7A88E41AE0B8CCC5A /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E6EE1B67593190AA2EFC9 /* DailyShadow.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
@@ -64,8 +64,6 @@
 		E32E6BD16E2E443806A7877C /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95CC6DC6367E4933A486E223 /* HomeViewController.swift */; };
 		E579EE831A3B930382FCEE8A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D11761700097E8119C86D39D /* RxCocoa */; };
 		E9ABD483E93DF1BE080114D3 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 100E0E2FD6BCA0172A174941 /* Kingfisher */; };
-		EAFFFF89A05442D0A9FB55CD /* CarouselView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 517485ECF222E05856BC39DC /* CarouselView.swift */; };
-		EC9269C6F36A1561D1A7C011 /* SeletThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED87BB4C1C4633A4106C73FB /* SeletThemeViewController.swift */; };
 		EE74E4A783C093551488CA13 /* DailyLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7613E67DB841A75A4075F4CF /* DailyLabel.swift */; };
 		F2353E92853E03E0EFA03E29 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = 66D08F3741D6118D193CE504 /* SnapKit */; };
 		F821321777B08259B47B26B0 /* ThemeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B72D0F483C6710F23AB70B /* ThemeViewController.swift */; };
@@ -92,6 +90,7 @@
 		185AD60E6CB2818FFC0434F3 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
 		1FBA1ABED08AF315EBF6171B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24FE542FC0C3C3AD32AFCAED /* DailyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyColor.swift; sourceTree = "<group>"; };
+		274C6984454A038B0F1D3206 /* EnterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoViewController.swift; sourceTree = "<group>"; };
 		2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		3118197F6E1AD10FB65EA918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34B4F90512BF917D01E27818 /* Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,15 +98,13 @@
 		3A69B6776C444F00063BC00D /* OnBoardingReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnBoardingReactor.swift; sourceTree = "<group>"; };
 		4AA1BE3F3C3FBCE308D3C4DB /* DailyNavigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyNavigation.swift; sourceTree = "<group>"; };
 		50797FBBEC981CDF285ED34D /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
-		517485ECF222E05856BC39DC /* CarouselView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarouselView.swift; sourceTree = "<group>"; };
 		52B72D0F483C6710F23AB70B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		587AC24D73A0FB2DFCCC61E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		624C281E1564C462B6C8C9BD /* EnterInfoReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoReactor.swift; sourceTree = "<group>"; };
 		691765455429189503736CAB /* TabBarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlow.swift; sourceTree = "<group>"; };
 		723C41F93E033BFAABCAB01E /* DailyCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalender.swift; sourceTree = "<group>"; };
 		7613E67DB841A75A4075F4CF /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleModel.swift; sourceTree = "<group>"; };
-		774583202AAEAC5D00A7DA0B /* Daily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Daily.entitlements; path = Daily/Daily.entitlements; sourceTree = "<group>"; };
-		774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountSetInfoModel.swift; path = Daily/Sources/Data/Request/Account/AccountSetInfoModel.swift; sourceTree = SOURCE_ROOT; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		801692C7B4E6AD8DB593991A /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
@@ -116,7 +113,6 @@
 		8BE91FA13FF4F0615B858F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
 		8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
-		92CBC73FBF62BA7B7F9C0B20 /* SelectThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeReactor.swift; sourceTree = "<group>"; };
 		95CC6DC6367E4933A486E223 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9E01E2014B2F448D31F4AE16 /* DailyKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyKeychain.swift; sourceTree = "<group>"; };
 		A7A60FCC1A211C55CE1AAF3D /* HomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReactor.swift; sourceTree = "<group>"; };
@@ -128,13 +124,12 @@
 		C6E886E3B0D097D503F8D46C /* DiaryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryServices.swift; sourceTree = "<group>"; };
 		C7141189190E3E980525F57F /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		CA72DF96186CC09B8B01171B /* DailyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTextField.swift; sourceTree = "<group>"; };
-		D051FBF71347C271B5208C08 /* SelectThemeCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectThemeCell.swift; sourceTree = "<group>"; };
 		D23B51E639CC25049DDD8D2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D849385038CC481A806C8791 /* ThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeRequest.swift; sourceTree = "<group>"; };
+		D905E35A11FD053379F4441D /* AccountSetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetInfoModel.swift; sourceTree = "<group>"; };
 		DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlow.swift; sourceTree = "<group>"; };
 		DEBC81D02546DE54EA44A518 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2FCC1C09B8122D1AB4E5F20 /* DailyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTabBar.swift; sourceTree = "<group>"; };
-		ED87BB4C1C4633A4106C73FB /* SeletThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SeletThemeViewController.swift; sourceTree = "<group>"; };
 		F92C5ADB10F27E9FD7451C4D /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
 		FAF998D3E1CB85699F4819DC /* WriteDiaryRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WriteDiaryRequest.swift; sourceTree = "<group>"; };
 		FC057C128492F249CF21E001 /* DailyStep.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyStep.swift; sourceTree = "<group>"; };
@@ -206,15 +201,6 @@
 				926CFB350014F3D72E22420A /* Diary */,
 			);
 			path = Services;
-			sourceTree = "<group>";
-		};
-		0DDA953DB8B9EA293DCE7EE8 /* VC */ = {
-			isa = PBXGroup;
-			children = (
-				517485ECF222E05856BC39DC /* CarouselView.swift */,
-				ED87BB4C1C4633A4106C73FB /* SeletThemeViewController.swift */,
-			);
-			path = VC;
 			sourceTree = "<group>";
 		};
 		0F6684FB4509C3FDBF93309E /* Extension */ = {
@@ -419,6 +405,14 @@
 			path = Button;
 			sourceTree = "<group>";
 		};
+		795ABC3DD83AF50FCA31DE79 /* VC */ = {
+			isa = PBXGroup;
+			children = (
+				274C6984454A038B0F1D3206 /* EnterInfoViewController.swift */,
+			);
+			path = VC;
+			sourceTree = "<group>";
+		};
 		7DA7F619EF8A98170168A75B /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
@@ -447,7 +441,6 @@
 		7F1E51F85354B9375BA0B4EE = {
 			isa = PBXGroup;
 			children = (
-				774583202AAEAC5D00A7DA0B /* Daily.entitlements */,
 				F64079BAE6C0CE82E6C9D3A3 /* Project */,
 				253DD9766443FCDDF7726992 /* Frameworks */,
 				B93FEC9B7E07899A92846908 /* Products */,
@@ -478,6 +471,14 @@
 				C6E886E3B0D097D503F8D46C /* DiaryServices.swift */,
 			);
 			path = Diary;
+			sourceTree = "<group>";
+		};
+		985271A4A697360618ACBEAF /* Reactor */ = {
+			isa = PBXGroup;
+			children = (
+				624C281E1564C462B6C8C9BD /* EnterInfoReactor.swift */,
+			);
+			path = Reactor;
 			sourceTree = "<group>";
 		};
 		9C41F64839C774E2653F3926 /* Base */ = {
@@ -511,6 +512,15 @@
 			path = Daily;
 			sourceTree = "<group>";
 		};
+		B746F88375F5568DAEA67EB2 /* EnterInfo */ = {
+			isa = PBXGroup;
+			children = (
+				985271A4A697360618ACBEAF /* Reactor */,
+				795ABC3DD83AF50FCA31DE79 /* VC */,
+			);
+			path = EnterInfo;
+			sourceTree = "<group>";
+		};
 		B93FEC9B7E07899A92846908 /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -530,7 +540,7 @@
 		BC47CB3EE098C5D66B2A40EB /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				774583212AAED73700A7DA0B /* AccountSetInfoModel.swift */,
+				D905E35A11FD053379F4441D /* AccountSetInfoModel.swift */,
 				D849385038CC481A806C8791 /* ThemeRequest.swift */,
 			);
 			path = Account;
@@ -632,29 +642,11 @@
 			path = Derived;
 			sourceTree = "<group>";
 		};
-		EB549F0BECC74E18E5D60A31 /* SelectTheme */ = {
-			isa = PBXGroup;
-			children = (
-				F3A2F89CFF1C009C8FB10FE9 /* Cell */,
-				EBDBEBCA1FF5109B9424B009 /* Reactor */,
-				0DDA953DB8B9EA293DCE7EE8 /* VC */,
-			);
-			path = SelectTheme;
-			sourceTree = "<group>";
-		};
-		EBDBEBCA1FF5109B9424B009 /* Reactor */ = {
-			isa = PBXGroup;
-			children = (
-				92CBC73FBF62BA7B7F9C0B20 /* SelectThemeReactor.swift */,
-			);
-			path = Reactor;
-			sourceTree = "<group>";
-		};
 		EC9AD4C5B03BC89EDC9422AC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				B746F88375F5568DAEA67EB2 /* EnterInfo */,
 				66E0A9B4DAA1BC882CCF5AD3 /* OnBoarding */,
-				EB549F0BECC74E18E5D60A31 /* SelectTheme */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -667,14 +659,6 @@
 				30C3EC6C095C9AB03BF92C0E /* Utils */,
 			);
 			path = Presentation;
-			sourceTree = "<group>";
-		};
-		F3A2F89CFF1C009C8FB10FE9 /* Cell */ = {
-			isa = PBXGroup;
-			children = (
-				D051FBF71347C271B5208C08 /* SelectThemeCell.swift */,
-			);
-			path = Cell;
 			sourceTree = "<group>";
 		};
 		F64079BAE6C0CE82E6C9D3A3 /* Project */ = {
@@ -737,6 +721,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = Daily;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = A44BFB2ED6C04BB88C116CC5 /* Build configuration list for PBXProject "Daily" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -786,7 +772,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				774583222AAED73700A7DA0B /* AccountSetInfoModel.swift in Sources */,
 				A724FB31F26D80030ADA7A57 /* AppDelegate.swift in Sources */,
 				989F8E60271907C3692AB6F6 /* AppFlow.swift in Sources */,
 				842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */,
@@ -799,6 +784,7 @@
 				687D364044989AFA73626E77 /* BaseURL.swift in Sources */,
 				BEA1C7183C42C34574E46D95 /* ThemeCountModel.swift in Sources */,
 				CB474453BC1FA453AD063427 /* SignInWithAppleModel.swift in Sources */,
+				4C5C3111F288142A6E906116 /* AccountSetInfoModel.swift in Sources */,
 				3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */,
 				1E546479FE8369BF32FDF0F3 /* WriteDiaryRequest.swift in Sources */,
 				AF5A38F0A233372013DB1F11 /* AccountServices.swift in Sources */,
@@ -806,12 +792,10 @@
 				D1323610636367664A722702 /* DiaryServices.swift in Sources */,
 				27A338BB3CF1030276044663 /* BaseViewController.swift in Sources */,
 				803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */,
+				493DB288940131C4ED5999AE /* EnterInfoReactor.swift in Sources */,
+				3F21E725455D66C8A70347E0 /* EnterInfoViewController.swift in Sources */,
 				4797DBC2FDBB7794AC8ABF7C /* OnBoardingReactor.swift in Sources */,
 				41DC51C5016C0264164861F8 /* OnBoardingViewController.swift in Sources */,
-				6FAED19DB17CC8A580DDAB18 /* SelectThemeCell.swift in Sources */,
-				42014340486942BB4AAA6E6D /* SelectThemeReactor.swift in Sources */,
-				EAFFFF89A05442D0A9FB55CD /* CarouselView.swift in Sources */,
-				EC9269C6F36A1561D1A7C011 /* SeletThemeViewController.swift in Sources */,
 				761B5290D02DFB391BF44F6D /* DiaryReactor.swift in Sources */,
 				A0B9F58929C2A59DB2B3983C /* DiaryViewController.swift in Sources */,
 				DC63607FA6387854D56C49E8 /* HomeReactor.swift in Sources */,
@@ -855,9 +839,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Daily/Daily.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -994,9 +976,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = Daily/Daily.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

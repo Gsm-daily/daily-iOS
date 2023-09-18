@@ -4,7 +4,7 @@ import RxCocoa
 import RxFlow
 import ReactorKit
 
-final class SelectThemeReactor: Reactor, Stepper {
+class EnterInfoReactor: Reactor, Stepper {
     // MARK: - Properties
     var initialState: State
     
@@ -30,14 +30,15 @@ final class SelectThemeReactor: Reactor, Stepper {
 }
 
 // MARK: - Mutate
-extension SelectThemeReactor {
+extension EnterInfoReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
+            
         }
     }
 }
 
 // MARK: - Method
-private extension SelectThemeReactor {
+private extension EnterInfoReactor {
 
 }
