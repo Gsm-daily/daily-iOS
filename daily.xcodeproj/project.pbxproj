@@ -19,20 +19,20 @@
 		2EED616CF9380AEBA12344ED /* Gifu in Frameworks */ = {isa = PBXBuildFile; productRef = 7B980D196817B225807FC212 /* Gifu */; };
 		3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D849385038CC481A806C8791 /* ThemeRequest.swift */; };
 		340D590100F51E55ACE1A938 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F92C5ADB10F27E9FD7451C4D /* SplashViewController.swift */; };
-		3F21E725455D66C8A70347E0 /* EnterInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C6984454A038B0F1D3206 /* EnterInfoViewController.swift */; };
+		3F21E725455D66C8A70347E0 /* AccountSetInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 274C6984454A038B0F1D3206 /* AccountSetInfoViewController.swift */; };
 		3F94CEFBD2B923E3F9D9B367 /* TextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03C36085B09A07286B92865E /* TextField.swift */; };
 		41DC51C5016C0264164861F8 /* OnBoardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7CCA2674189205F22F07061 /* OnBoardingViewController.swift */; };
 		458D173786CA86E9809E5301 /* DPOTPView in Frameworks */ = {isa = PBXBuildFile; productRef = C7591A3CDDC1B7C10E1645F1 /* DPOTPView */; };
 		4797DBC2FDBB7794AC8ABF7C /* OnBoardingReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A69B6776C444F00063BC00D /* OnBoardingReactor.swift */; };
-		493DB288940131C4ED5999AE /* EnterInfoReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 624C281E1564C462B6C8C9BD /* EnterInfoReactor.swift */; };
 		4A6BC1D80EB9D1514254CEC5 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = 7B0E7E4FD34A5E2006417002 /* Moya */; };
 		4BCE8D0B8C9D760E1A32DAC6 /* Then in Frameworks */ = {isa = PBXBuildFile; productRef = 0EE2BFB6B1FFC4DD59F77760 /* Then */; };
-		4C5C3111F288142A6E906116 /* AccountSetInfoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905E35A11FD053379F4441D /* AccountSetInfoModel.swift */; };
+		4C5C3111F288142A6E906116 /* AccountSetInfoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D905E35A11FD053379F4441D /* AccountSetInfoRequest.swift */; };
 		51C543B22AD9756D0E2BBF2E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */; };
 		687D364044989AFA73626E77 /* BaseURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FCC0B9AC77F3B3797D6C85 /* BaseURL.swift */; };
 		761B5290D02DFB391BF44F6D /* DiaryReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 801692C7B4E6AD8DB593991A /* DiaryReactor.swift */; };
 		770B75C653CDD09B55534979 /* ThemeFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */; };
 		775B90D7A88E41AE0B8CCC5A /* DailyShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 159E6EE1B67593190AA2EFC9 /* DailyShadow.swift */; };
+		777966642AB84B68003E0A07 /* AccountSetInfoReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 777966632AB84B68003E0A07 /* AccountSetInfoReactor.swift */; };
 		803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */; };
 		842BFE42EBAEB7F3037589D1 /* LoginFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */; };
 		89108FC833CD38A5BD9EB926 /* ThemeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = C7141189190E3E980525F57F /* ThemeReactor.swift */; };
@@ -90,7 +90,7 @@
 		185AD60E6CB2818FFC0434F3 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
 		1FBA1ABED08AF315EBF6171B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		24FE542FC0C3C3AD32AFCAED /* DailyColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyColor.swift; sourceTree = "<group>"; };
-		274C6984454A038B0F1D3206 /* EnterInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoViewController.swift; sourceTree = "<group>"; };
+		274C6984454A038B0F1D3206 /* AccountSetInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetInfoViewController.swift; sourceTree = "<group>"; };
 		2E6DB005517E31D0576CCB85 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
 		3118197F6E1AD10FB65EA918 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		34B4F90512BF917D01E27818 /* Daily.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Daily.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -100,11 +100,11 @@
 		50797FBBEC981CDF285ED34D /* DiaryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryViewController.swift; sourceTree = "<group>"; };
 		52B72D0F483C6710F23AB70B /* ThemeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeViewController.swift; sourceTree = "<group>"; };
 		587AC24D73A0FB2DFCCC61E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		624C281E1564C462B6C8C9BD /* EnterInfoReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnterInfoReactor.swift; sourceTree = "<group>"; };
 		691765455429189503736CAB /* TabBarFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarFlow.swift; sourceTree = "<group>"; };
 		723C41F93E033BFAABCAB01E /* DailyCalender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyCalender.swift; sourceTree = "<group>"; };
 		7613E67DB841A75A4075F4CF /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleModel.swift; sourceTree = "<group>"; };
+		777966632AB84B68003E0A07 /* AccountSetInfoReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountSetInfoReactor.swift; path = daily/Sources/Presentation/Scene/Auth/AccountSetInfo/Reactor/AccountSetInfoReactor.swift; sourceTree = SOURCE_ROOT; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		801692C7B4E6AD8DB593991A /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		CA72DF96186CC09B8B01171B /* DailyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTextField.swift; sourceTree = "<group>"; };
 		D23B51E639CC25049DDD8D2B /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		D849385038CC481A806C8791 /* ThemeRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeRequest.swift; sourceTree = "<group>"; };
-		D905E35A11FD053379F4441D /* AccountSetInfoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetInfoModel.swift; sourceTree = "<group>"; };
+		D905E35A11FD053379F4441D /* AccountSetInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetInfoRequest.swift; sourceTree = "<group>"; };
 		DB6B509E8AFB8AE641211797 /* ThemeFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeFlow.swift; sourceTree = "<group>"; };
 		DEBC81D02546DE54EA44A518 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		E2FCC1C09B8122D1AB4E5F20 /* DailyTabBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTabBar.swift; sourceTree = "<group>"; };
@@ -408,7 +408,7 @@
 		795ABC3DD83AF50FCA31DE79 /* VC */ = {
 			isa = PBXGroup;
 			children = (
-				274C6984454A038B0F1D3206 /* EnterInfoViewController.swift */,
+				274C6984454A038B0F1D3206 /* AccountSetInfoViewController.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -476,7 +476,7 @@
 		985271A4A697360618ACBEAF /* Reactor */ = {
 			isa = PBXGroup;
 			children = (
-				624C281E1564C462B6C8C9BD /* EnterInfoReactor.swift */,
+				777966632AB84B68003E0A07 /* AccountSetInfoReactor.swift */,
 			);
 			path = Reactor;
 			sourceTree = "<group>";
@@ -512,13 +512,13 @@
 			path = Daily;
 			sourceTree = "<group>";
 		};
-		B746F88375F5568DAEA67EB2 /* EnterInfo */ = {
+		B746F88375F5568DAEA67EB2 /* AccountSetInfo */ = {
 			isa = PBXGroup;
 			children = (
 				985271A4A697360618ACBEAF /* Reactor */,
 				795ABC3DD83AF50FCA31DE79 /* VC */,
 			);
-			path = EnterInfo;
+			path = AccountSetInfo;
 			sourceTree = "<group>";
 		};
 		B93FEC9B7E07899A92846908 /* Products */ = {
@@ -540,7 +540,7 @@
 		BC47CB3EE098C5D66B2A40EB /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				D905E35A11FD053379F4441D /* AccountSetInfoModel.swift */,
+				D905E35A11FD053379F4441D /* AccountSetInfoRequest.swift */,
 				D849385038CC481A806C8791 /* ThemeRequest.swift */,
 			);
 			path = Account;
@@ -645,7 +645,7 @@
 		EC9AD4C5B03BC89EDC9422AC /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				B746F88375F5568DAEA67EB2 /* EnterInfo */,
+				B746F88375F5568DAEA67EB2 /* AccountSetInfo */,
 				66E0A9B4DAA1BC882CCF5AD3 /* OnBoarding */,
 			);
 			path = Auth;
@@ -721,8 +721,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = Daily;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = A44BFB2ED6C04BB88C116CC5 /* Build configuration list for PBXProject "Daily" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -784,7 +782,8 @@
 				687D364044989AFA73626E77 /* BaseURL.swift in Sources */,
 				BEA1C7183C42C34574E46D95 /* ThemeCountModel.swift in Sources */,
 				CB474453BC1FA453AD063427 /* SignInWithAppleModel.swift in Sources */,
-				4C5C3111F288142A6E906116 /* AccountSetInfoModel.swift in Sources */,
+				777966642AB84B68003E0A07 /* AccountSetInfoReactor.swift in Sources */,
+				4C5C3111F288142A6E906116 /* AccountSetInfoRequest.swift in Sources */,
 				3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */,
 				1E546479FE8369BF32FDF0F3 /* WriteDiaryRequest.swift in Sources */,
 				AF5A38F0A233372013DB1F11 /* AccountServices.swift in Sources */,
@@ -792,8 +791,7 @@
 				D1323610636367664A722702 /* DiaryServices.swift in Sources */,
 				27A338BB3CF1030276044663 /* BaseViewController.swift in Sources */,
 				803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */,
-				493DB288940131C4ED5999AE /* EnterInfoReactor.swift in Sources */,
-				3F21E725455D66C8A70347E0 /* EnterInfoViewController.swift in Sources */,
+				3F21E725455D66C8A70347E0 /* AccountSetInfoViewController.swift in Sources */,
 				4797DBC2FDBB7794AC8ABF7C /* OnBoardingReactor.swift in Sources */,
 				41DC51C5016C0264164861F8 /* OnBoardingViewController.swift in Sources */,
 				761B5290D02DFB391BF44F6D /* DiaryReactor.swift in Sources */,
