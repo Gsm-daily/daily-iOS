@@ -30,6 +30,8 @@ class LoginFlow: Flow {
             return navigateToOnBoarding()
         case .tabBarIsRequired:
             return .end(forwardToParentFlowWithStep: DailyStep.tabBarIsRequired)
+        case .enterInfoIsRequired:
+            return navigateToEnterInfo()
         case let .failureAlert(title, message, action):
             return presentToFailureAlert(title: title, message: message, action: action)
         case let .alert(title, message, style, actions):
@@ -50,6 +52,13 @@ class LoginFlow: Flow {
         let vc = OnBoardingViewController(vm)
         self.rootViewController.setViewControllers([vc], animated: false)
         return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: vm))
+    }
+    
+    private func navigateToEnterInfo() -> FlowContributors {
+        let reactor = EnterInfoReactor()
+        let vc = EnterInfoViewController(reactor)
+        self.rootViewController.pushViewController(vc, animated: true)
+        return .one(flowContributor: .contribute(withNextPresentable: vc, withNextStepper: reactor))
     }
     
     private func presentToAlert(title: String?, message: String?, style: UIAlertController.Style, actions: [UIAlertAction]) -> FlowContributors {
