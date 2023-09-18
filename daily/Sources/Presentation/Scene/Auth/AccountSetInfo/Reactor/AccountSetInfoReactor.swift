@@ -4,7 +4,7 @@ import RxCocoa
 import RxFlow
 import ReactorKit
 
-class EnterInfoReactor: Reactor, Stepper {
+class AccountSetInfoReactor: Reactor, Stepper {
     // MARK: - Properties
     var initialState: State
     
@@ -30,7 +30,7 @@ class EnterInfoReactor: Reactor, Stepper {
 }
 
 // MARK: - Mutate
-extension EnterInfoReactor {
+extension AccountSetInfoReactor {
     func mutate(action: Action) -> Observable<Mutation> {
         switch action {
             
@@ -39,6 +39,6 @@ extension EnterInfoReactor {
 }
 
 // MARK: - Method
-private extension EnterInfoReactor {
+private extension AccountSetInfoReactor {
 
 }

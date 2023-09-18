@@ -1,7 +1,7 @@
 import Foundation
 import UIKit
 
-class EnterInfoViewController: BaseViewController<EnterInfoReactor> {
+class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
     
     override func viewDidLoad() {
         super.viewDidLoad()

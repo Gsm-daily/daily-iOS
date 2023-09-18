@@ -15,8 +15,8 @@ enum DailyStep: Step {
     // MARK: OnBoarding
     case onBoardingIsRequired
     
-    //MARK: EnterInfo
-    case enterInfoIsRequired
+    //MARK: AccountSetInfo
+    case accountSetInfoIsRequired
     
     // MARK: Main
     case tabBarIsRequired
