@@ -97,7 +97,12 @@ extension OnBoardingReactor: ASAuthorizationControllerDelegate {
                     case 200..<300:
                         print(self.authData)
                         self.addKeychainToken()
-                        self.steps.accept(DailyStep.tabBarIsRequired)
+                        if self.authData?.isExist == false {
+                            self.steps.accept(DailyStep.accountSetInfoIsRequired)
+                        }
+                        else {
+                            self.steps.accept(DailyStep.tabBarIsRequired)
+                        }
                     case 401:
                         print("ERROR")
                     default:
