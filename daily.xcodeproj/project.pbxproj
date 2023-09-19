@@ -105,6 +105,7 @@
 		7613E67DB841A75A4075F4CF /* DailyLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyLabel.swift; sourceTree = "<group>"; };
 		76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInWithAppleModel.swift; sourceTree = "<group>"; };
 		777966632AB84B68003E0A07 /* AccountSetInfoReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AccountSetInfoReactor.swift; path = daily/Sources/Presentation/Scene/Auth/AccountSetInfo/Reactor/AccountSetInfoReactor.swift; sourceTree = SOURCE_ROOT; };
+		777966682AB935FE003E0A07 /* Daily.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; name = Daily.entitlements; path = Daily/Daily.entitlements; sourceTree = "<group>"; };
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		801692C7B4E6AD8DB593991A /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
@@ -441,6 +442,7 @@
 		7F1E51F85354B9375BA0B4EE = {
 			isa = PBXGroup;
 			children = (
+				777966682AB935FE003E0A07 /* Daily.entitlements */,
 				F64079BAE6C0CE82E6C9D3A3 /* Project */,
 				253DD9766443FCDDF7726992 /* Frameworks */,
 				B93FEC9B7E07899A92846908 /* Products */,
@@ -837,7 +839,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Daily/Daily.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -974,7 +978,9 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Daily/Daily.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

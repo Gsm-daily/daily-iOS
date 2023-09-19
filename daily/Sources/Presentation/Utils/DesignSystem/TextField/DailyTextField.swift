@@ -64,7 +64,6 @@ public final class DailyTextField: UITextField {
             self.setBackGroundColor()
             self.layer.cornerRadius = 20
             self.textColor = .black
-            self.isSecureTextEntry = true
             self.leftPadding(width: 20)
         }
     }
