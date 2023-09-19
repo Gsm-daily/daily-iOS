@@ -24,6 +24,7 @@ final class SplashViewController: UIViewController, Stepper {
         setLayout()
         setAnimation()
         navigateToLogin()
+        self.navigationItem.backButtonTitle = ""
     }
     
     private let splashLogo = UIImageView().then {

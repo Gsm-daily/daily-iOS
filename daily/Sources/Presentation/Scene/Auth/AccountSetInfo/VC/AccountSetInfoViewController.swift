@@ -5,6 +5,7 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationItem.title = "정보 입력"
     }
     
     private let nickNameText = UILabel().then {
@@ -27,20 +28,20 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
         $0.textColor = .black
     }
     
-    private var grassLandThemeButton = UIButton().then {
+    var grassLandThemeButton = UIButton().then {
         $0.setImage(
             UIImage(named: "grassLand.svg"),
             for: .normal
         )
-        $0.layer.cornerRadius = 20
+        $0.layer.cornerRadius = 14
     }
     
-    private var oceanThemeButton = UIButton().then {
+    var oceanThemeButton = UIButton().then {
         $0.setImage(
             UIImage(named: "ocean.svg"),
             for: .normal
         )
-        $0.layer.cornerRadius = 20
+        $0.layer.cornerRadius = 14
     }
     
     private var completeButton = DailyButton(text: "완료")
@@ -65,7 +66,7 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
         }
         nickNameTextField.snp.makeConstraints {
             $0.top.equalTo(nickNameText.snp.bottom).offset(8)
-            $0.trailing.leading.equalToSuperview().offset(20)
+            $0.trailing.leading.equalToSuperview().inset(20)
             $0.height.equalTo(60)
         }
         selectThemeText.snp.makeConstraints {
@@ -75,14 +76,10 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
         grassLandThemeButton.snp.makeConstraints {
             $0.top.equalTo(selectThemeText.snp.bottom).offset(8)
             $0.leading.equalTo(view.snp.leading).offset(20)
-            $0.width.equalTo((bounds.width) / 2.5)
-            $0.height.equalTo(70)
         }
         oceanThemeButton.snp.makeConstraints {
             $0.centerY.equalTo(grassLandThemeButton.snp.centerY).offset(0)
             $0.trailing.equalTo(view.snp.trailing).inset(20)
-            $0.width.equalTo((bounds.width) / 2.5)
-            $0.height.equalTo(70)
         }
         completeButton.snp.makeConstraints {
             $0.bottom.equalTo(view.snp.bottom).inset(58)
@@ -95,8 +92,26 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
     
     override func bindView(reactor: AccountSetInfoReactor) {
         completeButton.rx.tap
-            .map { AccountSetInfoReactor.Action.completeButtonDidtap(name: self.nickNameTextField.text ?? "", theme: "GRASSLAND") }
+            .map { AccountSetInfoReactor.Action.completeButtonDidTap(name: self.nickNameTextField.text ?? "") }
             .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+    
+    override func bindAction(reactor: AccountSetInfoReactor) {
+        grassLandThemeButton.rx.tap
+            .map { AccountSetInfoReactor.Action.grassLandButtonDidTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+        oceanThemeButton.rx.tap
+            .map { AccountSetInfoReactor.Action.oceanButtonDidTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+    
+    override func bindState(reactor: AccountSetInfoReactor) {
+        reactor.state
+            .map { $0.theme }
+            .bind(to: self.rx.setTheme)
             .disposed(by: disposeBag)
     }
 }
