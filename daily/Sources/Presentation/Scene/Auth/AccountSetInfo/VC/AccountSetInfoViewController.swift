@@ -33,7 +33,7 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
             UIImage(named: "grassLand.svg"),
             for: .normal
         )
-        $0.layer.cornerRadius = 20
+        $0.layer.cornerRadius = 14
     }
     
     var oceanThemeButton = UIButton().then {
@@ -41,7 +41,7 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
             UIImage(named: "ocean.svg"),
             for: .normal
         )
-        $0.layer.cornerRadius = 20
+        $0.layer.cornerRadius = 14
     }
     
     private var completeButton = DailyButton(text: "완료")
@@ -76,14 +76,10 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
         grassLandThemeButton.snp.makeConstraints {
             $0.top.equalTo(selectThemeText.snp.bottom).offset(8)
             $0.leading.equalTo(view.snp.leading).offset(20)
-            $0.width.equalTo((bounds.width) / 2.5)
-            $0.height.equalTo((bounds.height) / 11.6)
         }
         oceanThemeButton.snp.makeConstraints {
             $0.centerY.equalTo(grassLandThemeButton.snp.centerY).offset(0)
             $0.trailing.equalTo(view.snp.trailing).inset(20)
-            $0.width.equalTo((bounds.width) / 2.5)
-            $0.height.equalTo((bounds.height) / 11.6)
         }
         completeButton.snp.makeConstraints {
             $0.bottom.equalTo(view.snp.bottom).inset(58)
@@ -109,6 +105,13 @@ class AccountSetInfoViewController: BaseViewController<AccountSetInfoReactor> {
         oceanThemeButton.rx.tap
             .map { AccountSetInfoReactor.Action.oceanButtonDidTap }
             .bind(to: reactor.action)
+            .disposed(by: disposeBag)
+    }
+    
+    override func bindState(reactor: AccountSetInfoReactor) {
+        reactor.state
+            .map { $0.theme }
+            .bind(to: self.rx.setTheme)
             .disposed(by: disposeBag)
     }
 }

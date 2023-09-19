@@ -62,6 +62,7 @@ extension AccountSetInfoReactor {
 
         switch mutation {
         case let .setTheme(theme):
+            newState.theme = theme
             self.theme = theme
         }
 
