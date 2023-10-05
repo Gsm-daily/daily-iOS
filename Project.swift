@@ -53,8 +53,11 @@ let project = Project(
         .remote(
             url: "https://github.com/Datt1994/DPOTPView.git",
             requirement: .exact("1.5.12")
+        ),
+        .remote(
+            url: "https://github.com/kakao/kakao-ios-sdk",
+            requirement: .exact("2.18.0")
         )
-        
     ],
     settings: nil,
     targets: [
@@ -82,7 +85,10 @@ let project = Project(
                 .package(product: "ViewAnimator"),
                 .package(product: "FSCalendar"),
                 .package(product: "Gifu"),
-                .package(product: "DPOTPView")
+                .package(product: "DPOTPView"),
+                .package(product: "KakaoSDKCommon"),
+                .package(product: "KakaoSDKUser"),
+                .package(product: "KakaoSDKAuth")
                ] // tuist generate할 경우 pod install이 자동으로 실행
               )
     ],
