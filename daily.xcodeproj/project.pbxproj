@@ -89,6 +89,7 @@
 /* Begin PBXFileReference section */
 		03C36085B09A07286B92865E /* TextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextField.swift; sourceTree = "<group>"; };
 		0C18C33A2C3173B66C7E4537 /* Button.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Button.swift; sourceTree = "<group>"; };
+		11EB2AB7A744B6C399613822 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		1403CF8BA97065FFAEB71CAF /* ProfileFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFlow.swift; sourceTree = "<group>"; };
 		159E6EE1B67593190AA2EFC9 /* DailyShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyShadow.swift; sourceTree = "<group>"; };
 		185AD60E6CB2818FFC0434F3 /* ProfileCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCollectionCell.swift; sourceTree = "<group>"; };
@@ -115,7 +116,6 @@
 		84EF7EF34450A3B39DDAD783 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServices.swift; sourceTree = "<group>"; };
 		85477FFC6164F75CBA4021DB /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		8B25B2CDA8C60414CB79B9C2 /* AccountSetInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetInfoRequest.swift; sourceTree = "<group>"; };
-		8BE91FA13FF4F0615B858F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
 		8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
 		95CC6DC6367E4933A486E223 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
@@ -524,7 +524,7 @@
 			children = (
 				DEEBB42A4BF3F5C200418DBB /* Resources */,
 				49045322D3A18070F8FCE378 /* Sources */,
-				8BE91FA13FF4F0615B858F6B /* Info.plist */,
+				BD8846B5E79981E16DFFB5D2 /* Support */,
 			);
 			path = Daily;
 			sourceTree = "<group>";
@@ -552,6 +552,14 @@
 				D849385038CC481A806C8791 /* ThemeRequest.swift */,
 			);
 			path = Account;
+			sourceTree = "<group>";
+		};
+		BD8846B5E79981E16DFFB5D2 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				11EB2AB7A744B6C399613822 /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 		C961CB3BEFF346A5273F9D10 /* Sources */ = {
@@ -861,7 +869,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Daily/Info.plist;
+				INFOPLIST_FILE = Daily/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -998,7 +1006,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				ENABLE_PREVIEWS = YES;
-				INFOPLIST_FILE = Daily/Info.plist;
+				INFOPLIST_FILE = Daily/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

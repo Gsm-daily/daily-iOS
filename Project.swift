@@ -70,7 +70,7 @@ let project = Project(
                 targetVersion: targetVersion,
                 devices: [.iphone, .ipad]
                ),
-               infoPlist: .file(path: "\(projectName)/Info.plist"),
+               infoPlist: .file(path: "\(projectName)/Support/Info.plist"),
                sources: ["\(projectName)/**"],
                resources: ["\(projectName)/Resources/**"],
                dependencies: [
