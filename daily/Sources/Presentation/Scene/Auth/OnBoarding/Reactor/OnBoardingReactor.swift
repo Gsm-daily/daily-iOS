@@ -75,6 +75,7 @@ private extension OnBoardingReactor {
                 else {
                     print("loginWithKakaoTalk() success.")
                     _ = oauthToken
+                    self.steps.accept(DailyStep.tabBarIsRequired)
                 }
             }
         }

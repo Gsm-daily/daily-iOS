@@ -134,6 +134,10 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
             .map { OnBoardingReactor.Action.signInWithAppleButtonDidTap }
             .bind(to: reactor.action)
             .disposed(by: disposeBag)
+        signInWithKakaoButton.rx.controlEvent(.touchUpInside)
+            .map { OnBoardingReactor.Action.signInWithKakaoButtonDidTap }
+            .bind(to: reactor.action)
+            .disposed(by: disposeBag)
     }
 
 }
