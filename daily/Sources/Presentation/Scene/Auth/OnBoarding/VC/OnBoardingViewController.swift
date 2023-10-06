@@ -58,7 +58,15 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
         type: .signIn,
         style: .black
     ).then {
-        $0.cornerRadius = 10
+        $0.cornerRadius = 8
+    }
+    
+    private let signInWithKakaoButton = UIButton().then {
+        $0.setImage(
+            UIImage(named: "KakaoButtomImage.png"),
+            for: .normal
+        )
+        $0.layer.cornerRadius = 8
     }
     
     override func addView() {
@@ -67,7 +75,8 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
             buttonBackgroundView,
             mainExplainText,
             subExplainText,
-            signInWithAppleButton
+            signInWithAppleButton,
+            signInWithKakaoButton
         ].forEach {
             view.addSubview($0)
         }
@@ -81,7 +90,7 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
             AnimationType.from(direction: .bottom, offset: 211)
         ], initialAlpha: 0, finalAlpha: 1, delay: 0, duration: 1.25, options: .curveEaseInOut)
         UIView.animate(views: [
-            mainExplainText, subExplainText, signInWithAppleButton
+            mainExplainText, subExplainText, signInWithAppleButton, signInWithKakaoButton
         ], animations: [
             AnimationType.from(direction: .left, offset: 100)
         ], initialAlpha: 0, finalAlpha: 1, delay: 1, duration: 1, options: .curveEaseInOut)
@@ -96,7 +105,7 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
             $0.bottom.equalTo(view.snp.bottom).offset(0)
             $0.centerX.equalToSuperview()
             $0.leading.trailing.equalToSuperview().offset(0)
-            $0.height.equalTo((bounds.height) / 2.82)
+            $0.height.equalTo((bounds.height) / 2.28)
         }
         mainExplainText.snp.makeConstraints {
             $0.top.equalTo(buttonBackgroundView.snp.top).offset((bounds.height) / 20.3)
@@ -109,7 +118,13 @@ class OnBoardingViewController: BaseViewController<OnBoardingReactor>{
         signInWithAppleButton.snp.makeConstraints {
             $0.centerX.equalToSuperview()
             $0.leading.trailing.equalToSuperview().inset(20)
-            $0.bottom.equalToSuperview().inset((bounds.height) / 12.3)
+            $0.top.equalTo(subExplainText.snp.bottom).offset(40)
+            $0.height.equalTo(48)
+        }
+        signInWithKakaoButton.snp.makeConstraints {
+            $0.centerX.equalToSuperview()
+            $0.leading.trailing.equalToSuperview().inset(20)
+            $0.top.equalTo(signInWithAppleButton.snp.bottom).offset(20)
             $0.height.equalTo(48)
         }
     }
