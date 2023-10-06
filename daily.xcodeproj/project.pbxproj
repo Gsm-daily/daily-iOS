@@ -868,6 +868,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1005,6 +1006,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;

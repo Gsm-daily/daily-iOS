@@ -1,4 +1,5 @@
 import Foundation
+import KakaoSDKUser
 import RxFlow
 import RxCocoa
 import RxSwift
@@ -23,6 +24,7 @@ class OnBoardingReactor: NSObject, Reactor, Stepper{
     
     enum Action {
         case signInWithAppleButtonDidTap
+        case signInWithKakaoButtonDidTap
     }
     
     enum Mutation {
@@ -45,6 +47,8 @@ extension OnBoardingReactor {
         switch action {
         case .signInWithAppleButtonDidTap:
             return signInWithAppleButtonDidTap()
+        case .signInWithKakaoButtonDidTap:
+            return signInWithKakaoButtonDidTap()
         }
     }
 }
@@ -59,6 +63,22 @@ private extension OnBoardingReactor {
         let controller = ASAuthorizationController(authorizationRequests: [request])
         controller.delegate = self
         controller.performRequests()
+        return .empty()
+    }
+    
+    private func signInWithKakaoButtonDidTap() -> Observable<Mutation> {
+        if (UserApi.isKakaoTalkLoginAvailable()) {
+            UserApi.shared.loginWithKakaoTalk {(oauthToken, error) in
+                if let error = error {
+                    print(error)
+                }
+                else {
+                    print("loginWithKakaoTalk() success.")
+                    _ = oauthToken
+                    self.steps.accept(DailyStep.tabBarIsRequired)
+                }
+            }
+        }
         return .empty()
     }
 }
