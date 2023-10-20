@@ -749,6 +749,8 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = Daily;
+				TargetAttributes = {
+				};
 			};
 			buildConfigurationList = A44BFB2ED6C04BB88C116CC5 /* Build configuration list for PBXProject "Daily" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -868,7 +870,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
@@ -1006,7 +1007,6 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = 5GD5Q99952;
 				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = Daily/Support/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
