@@ -1,12 +1,11 @@
-import Foundation
 import Moya
 
-enum DiaryServices {
+enum DiaryType {
     case writeDiary(param: WriteDiaryRequest, authorization: String)
 }
 
 
-extension DiaryServices: TargetType {
+extension DiaryType: TargetType {
     public var baseURL: URL {
         return URL(string: BaseURL.baseURL)!
     }

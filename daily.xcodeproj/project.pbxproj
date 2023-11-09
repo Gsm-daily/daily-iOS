@@ -47,8 +47,8 @@
 		A65FCD0B212AFC0BF70AA0B0 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEBC81D02546DE54EA44A518 /* ProfileViewController.swift */; };
 		A724FB31F26D80030ADA7A57 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3118197F6E1AD10FB65EA918 /* AppDelegate.swift */; };
 		ACCF94C2135D0E2F04218820 /* DailyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA72DF96186CC09B8B01171B /* DailyTextField.swift */; };
-		AE767DF37DCD34564B8C2789 /* AuthServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */; };
-		AF5A38F0A233372013DB1F11 /* AccountServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF7EF34450A3B39DDAD783 /* AccountServices.swift */; };
+		AE767DF37DCD34564B8C2789 /* AuthType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EA185EF9995B96FD3A0CF29 /* AuthType.swift */; };
+		AF5A38F0A233372013DB1F11 /* AccountType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84EF7EF34450A3B39DDAD783 /* AccountType.swift */; };
 		B07B5846C81EB0FCE7EAD133 /* DailyStep.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC057C128492F249CF21E001 /* DailyStep.swift */; };
 		B2125E987F915838726DE7A2 /* TuistBundle+Daily.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */; };
 		B24B1CB7D6DBC6FAF793DAB2 /* KakaoSDKUser in Frameworks */ = {isa = PBXBuildFile; productRef = C4BFE72E4555A0B3A717A731 /* KakaoSDKUser */; };
@@ -61,7 +61,7 @@
 		C993B6C8FA9E8239ED72639B /* DailyColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 24FE542FC0C3C3AD32AFCAED /* DailyColor.swift */; };
 		C9B81DB2365837538F44D14A /* FSCalendar in Frameworks */ = {isa = PBXBuildFile; productRef = 51B01435703480FC39DE3E9C /* FSCalendar */; };
 		CB474453BC1FA453AD063427 /* SignInWithAppleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76AEBD00DF82679D8E13F1DD /* SignInWithAppleModel.swift */; };
-		D1323610636367664A722702 /* DiaryServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E886E3B0D097D503F8D46C /* DiaryServices.swift */; };
+		D1323610636367664A722702 /* DiaryType.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6E886E3B0D097D503F8D46C /* DiaryType.swift */; };
 		D6AA2D0EF7FDEB7D155FD55E /* AccountSetInfoView + Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1819DEB7378D90025938634 /* AccountSetInfoView + Rx.swift */; };
 		DC63607FA6387854D56C49E8 /* HomeReactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7A60FCC1A211C55CE1AAF3D /* HomeReactor.swift */; };
 		DD13DE036C2016F453C5773D /* DailyKeychain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E01E2014B2F448D31F4AE16 /* DailyKeychain.swift */; };
@@ -113,11 +113,11 @@
 		7BDF702CDE698C974C9FB69D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		7E9E2452332D073464A62EA3 /* TuistBundle+Daily.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TuistBundle+Daily.swift"; sourceTree = "<group>"; };
 		801692C7B4E6AD8DB593991A /* DiaryReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryReactor.swift; sourceTree = "<group>"; };
-		84EF7EF34450A3B39DDAD783 /* AccountServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountServices.swift; sourceTree = "<group>"; };
+		84EF7EF34450A3B39DDAD783 /* AccountType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountType.swift; sourceTree = "<group>"; };
 		85477FFC6164F75CBA4021DB /* AppFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppFlow.swift; sourceTree = "<group>"; };
 		8B25B2CDA8C60414CB79B9C2 /* AccountSetInfoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountSetInfoRequest.swift; sourceTree = "<group>"; };
 		8DE7F77A01A54D5BEB82D939 /* LoginFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginFlow.swift; sourceTree = "<group>"; };
-		8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthServices.swift; sourceTree = "<group>"; };
+		8EA185EF9995B96FD3A0CF29 /* AuthType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthType.swift; sourceTree = "<group>"; };
 		95CC6DC6367E4933A486E223 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		9E01E2014B2F448D31F4AE16 /* DailyKeychain.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyKeychain.swift; sourceTree = "<group>"; };
 		A7A60FCC1A211C55CE1AAF3D /* HomeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeReactor.swift; sourceTree = "<group>"; };
@@ -126,7 +126,7 @@
 		B033F59AE037C8A84FBDC915 /* DailyButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyButton.swift; sourceTree = "<group>"; };
 		B1FDE16182F588DC05C7FCBB /* MainFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFlow.swift; sourceTree = "<group>"; };
 		BFCB5F8F4115B208C9DF6641 /* ThemeCountModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeCountModel.swift; sourceTree = "<group>"; };
-		C6E886E3B0D097D503F8D46C /* DiaryServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryServices.swift; sourceTree = "<group>"; };
+		C6E886E3B0D097D503F8D46C /* DiaryType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryType.swift; sourceTree = "<group>"; };
 		C7141189190E3E980525F57F /* ThemeReactor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeReactor.swift; sourceTree = "<group>"; };
 		CA72DF96186CC09B8B01171B /* DailyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyTextField.swift; sourceTree = "<group>"; };
 		D1819DEB7378D90025938634 /* AccountSetInfoView + Rx.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AccountSetInfoView + Rx.swift"; sourceTree = "<group>"; };
@@ -209,14 +209,14 @@
 			path = Rx;
 			sourceTree = "<group>";
 		};
-		0D513083B7F12C6DA6D1DCB8 /* Services */ = {
+		0D513083B7F12C6DA6D1DCB8 /* Type */ = {
 			isa = PBXGroup;
 			children = (
 				E1DFF7AC7A920575D41E50E2 /* Account */,
 				D622A13A7C71B606193A3659 /* Auth */,
 				926CFB350014F3D72E22420A /* Diary */,
 			);
-			path = Services;
+			path = Type;
 			sourceTree = "<group>";
 		};
 		0F6684FB4509C3FDBF93309E /* Extension */ = {
@@ -493,7 +493,7 @@
 		926CFB350014F3D72E22420A /* Diary */ = {
 			isa = PBXGroup;
 			children = (
-				C6E886E3B0D097D503F8D46C /* DiaryServices.swift */,
+				C6E886E3B0D097D503F8D46C /* DiaryType.swift */,
 			);
 			path = Diary;
 			sourceTree = "<group>";
@@ -584,7 +584,7 @@
 				D336B4688E345BF5846E00F6 /* General */,
 				7EAB52316D11B1EABB442002 /* Model */,
 				52452C4E8AA7676EC888D762 /* Request */,
-				0D513083B7F12C6DA6D1DCB8 /* Services */,
+				0D513083B7F12C6DA6D1DCB8 /* Type */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -600,7 +600,7 @@
 		D622A13A7C71B606193A3659 /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				8EA185EF9995B96FD3A0CF29 /* AuthServices.swift */,
+				8EA185EF9995B96FD3A0CF29 /* AuthType.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -637,7 +637,7 @@
 		E1DFF7AC7A920575D41E50E2 /* Account */ = {
 			isa = PBXGroup;
 			children = (
-				84EF7EF34450A3B39DDAD783 /* AccountServices.swift */,
+				84EF7EF34450A3B39DDAD783 /* AccountType.swift */,
 			);
 			path = Account;
 			sourceTree = "<group>";
@@ -749,8 +749,6 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = YES;
 				ORGANIZATIONNAME = Daily;
-				TargetAttributes = {
-				};
 			};
 			buildConfigurationList = A44BFB2ED6C04BB88C116CC5 /* Build configuration list for PBXProject "Daily" */;
 			compatibilityVersion = "Xcode 13.0";
@@ -816,9 +814,9 @@
 				21BC4F643F4A3834753B6F06 /* AccountSetInfoRequest.swift in Sources */,
 				3071982F84D51544109B3D13 /* ThemeRequest.swift in Sources */,
 				1E546479FE8369BF32FDF0F3 /* WriteDiaryRequest.swift in Sources */,
-				AF5A38F0A233372013DB1F11 /* AccountServices.swift in Sources */,
-				AE767DF37DCD34564B8C2789 /* AuthServices.swift in Sources */,
-				D1323610636367664A722702 /* DiaryServices.swift in Sources */,
+				AF5A38F0A233372013DB1F11 /* AccountType.swift in Sources */,
+				AE767DF37DCD34564B8C2789 /* AuthType.swift in Sources */,
+				D1323610636367664A722702 /* DiaryType.swift in Sources */,
 				27A338BB3CF1030276044663 /* BaseViewController.swift in Sources */,
 				803DECD4BF43A9F4C8008A10 /* BaseViewModel.swift in Sources */,
 				C4AD5D6A28B31B272ECFCD5D /* AccountSetInfoReactor.swift in Sources */,

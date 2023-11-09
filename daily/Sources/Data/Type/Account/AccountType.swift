@@ -1,14 +1,13 @@
-import Foundation
 import Moya
 
-enum AccountServices {
+enum AccountType {
     case theme(authorization: String)
     case themeCount(theme: String, authorization: String)
     case accountSetInfo(authorization: String, param: AccountSetInfoRequest)
 }
 
 
-extension AccountServices: TargetType {
+extension AccountType: TargetType {
     public var baseURL: URL {
         return URL(string: BaseURL.baseURL)!
     }
