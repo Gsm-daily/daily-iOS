@@ -1,11 +1,11 @@
 import Moya
 
-enum AuthServices {
+enum AuthType {
     case signInWithApple(identityToken: String)
 }
 
 
-extension AuthServices: TargetType {
+extension AuthType: TargetType {
     public var baseURL: URL {
         return URL(string: BaseURL.baseURL)!
     }
@@ -39,7 +39,7 @@ extension AuthServices: TargetType {
     }
 }
 
-extension AuthServices {
+extension AuthType {
     var sampleData: Data {
         switch self {
         case let .signInWithApple(identityToken):
