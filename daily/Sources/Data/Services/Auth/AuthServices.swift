@@ -1,4 +1,3 @@
-import Foundation
 import Moya
 
 enum AuthServices {
@@ -25,10 +24,6 @@ extension AuthServices: TargetType {
         }
     }
     
-    var sampleData: Data {
-        return "@@".data(using: .utf8)!
-    }
-    
     var task: Task {
         switch self {
         case .signInWithApple:
@@ -40,6 +35,23 @@ extension AuthServices: TargetType {
         switch self {
         default:
             return["Content-Type" :"application/json"]
+        }
+    }
+}
+
+extension AuthServices {
+    var sampleData: Data {
+        switch self {
+        case let .signInWithApple(identityToken):
+            Data(
+                """
+                    "accessToken": "string",
+                    "accessTokenExpiredAt": "2023-11-09T14:21:23.074Z",
+                    "isExist": true,
+                    "refreshToken": "string",
+                    "refreshTokenExpiredAt": "2023-11-09T14:21:23.074Z"
+                """.utf8
+            )
         }
     }
 }
